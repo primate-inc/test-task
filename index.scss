@@ -1,0 +1,12 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+@import "mono";
+
+body {
+  @include typography('intro');
+  background: slot(color, page, accent);
+
+  padding: slot(space, medium);
+
+  border: 1px solid red;
+}

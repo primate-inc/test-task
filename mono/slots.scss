@@ -1,0 +1,27 @@
+//
+// Slots
+// Deep map providing nodes to elements.
+//
+// usage: slot(color, test)
+//        slot(color, typography, h1)
+//        responsive-slot('grid-column', grid, component, cta)
+//
+$slots: (
+  color: (
+    page: (
+      background: token(color, white),
+      text: token(color, black),
+      accent: token(color, green),
+    ),
+  ),
+  grid: (
+    full: "1 / -1",
+    wide: "3 / -3",
+    narrow: "5 / -5",
+  ),
+  space: (
+    small: token(sizes, sm, default),
+    medium: token(sizes, md, default),
+    large: token(sizes, lg, default),
+  )
+);

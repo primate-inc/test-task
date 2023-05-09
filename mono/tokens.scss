@@ -1,0 +1,218 @@
+/**
+ * Do not edit directly
+ * Generated on Sun, 30 Apr 2023 17:38:26 GMT
+ */
+
+$sizes-xs-desktop: 2rem !default;
+$sizes-xs-default: 1rem !default;
+$sizes-sm-desktop: 3rem !default;
+$sizes-sm-default: 2rem !default;
+$sizes-md-desktop: 5rem !default;
+$sizes-md-default: 3rem !default;
+$sizes-lg-desktop: 8rem !default;
+$sizes-lg-default: 5rem !default;
+$sizes-xl-desktop: 10rem !default;
+$sizes-xl-default: 8rem !default;
+$sizes-grid-main-desktop: 85rem !default;
+$sizes-grid-main-tablet: 45.5rem !default;
+$sizes-grid-main-default: 1000px !default;
+$breakpoints-desktop: 64rem !default;
+$breakpoints-tablet: 48rem !default;
+$breakpoints-tablet-wide: 64rem !default;
+$breakpoints-mobile: 23.4375rem !default;
+$color-black: hsla(0, 0%, 12%, 1) !default;
+$color-white: hsla(0, 0%, 100%, 1) !default;
+$color-green: hsla(148, 65%, 32%, 1) !default;
+$color-grey-light: hsla(0, 0%, 93%, 1) !default;
+$color-grey-medium: hsla(0, 0%, 85%, 1) !default;
+$color-grey-dark: hsla(0, 0%, 62%, 1) !default;
+$color-grey-darkest: hsla(0, 0%, 40%, 1) !default;
+$grid-main-tablet: (
+  "pattern": columns,
+  "gutterSize": 64,
+  "alignment": stretch,
+  "count": 6,
+  "offset": 64,
+) !default;
+$grid-main-default: (
+  "pattern": columns,
+  "gutterSize": 16,
+  "alignment": stretch,
+  "count": 6,
+  "offset": 16,
+) !default;
+$font-desktop-header: (
+  "fontSize": 80,
+  "textDecoration": none,
+  "fontFamily": Newsreader,
+  "fontWeight": 400,
+  "fontStyle": normal,
+  "fontStretch": normal,
+  "letterSpacing": 0,
+  "lineHeight": 88,
+  "paragraphIndent": 0,
+  "paragraphSpacing": 0,
+  "textCase": none,
+) !default;
+$font-desktop-intro: (
+  "fontSize": 40,
+  "textDecoration": none,
+  "fontFamily": Lato,
+  "fontWeight": 300,
+  "fontStyle": normal,
+  "fontStretch": normal,
+  "letterSpacing": 0,
+  "lineHeight": 64,
+  "paragraphIndent": 0,
+  "paragraphSpacing": 0,
+  "textCase": none,
+) !default;
+$font-desktop-paragraph: (
+  "fontSize": 32,
+  "textDecoration": none,
+  "fontFamily": Lato,
+  "fontWeight": 300,
+  "fontStyle": normal,
+  "fontStretch": normal,
+  "letterSpacing": 0,
+  "lineHeight": 40,
+  "paragraphIndent": 0,
+  "paragraphSpacing": 0,
+  "textCase": none,
+) !default;
+$font-desktop-subheader: (
+  "fontSize": 48,
+  "textDecoration": none,
+  "fontFamily": Newsreader,
+  "fontWeight": 400,
+  "fontStyle": normal,
+  "fontStretch": normal,
+  "letterSpacing": 0,
+  "lineHeight": 70,
+  "paragraphIndent": 0,
+  "paragraphSpacing": 0,
+  "textCase": none,
+) !default;
+$font-default-header: (
+  "fontSize": 28,
+  "textDecoration": none,
+  "fontFamily": Newsreader,
+  "fontWeight": 400,
+  "fontStyle": normal,
+  "fontStretch": normal,
+  "letterSpacing": 0,
+  "lineHeight": 48,
+  "paragraphIndent": 0,
+  "paragraphSpacing": 0,
+  "textCase": none,
+) !default;
+$font-default-intro: (
+  "fontSize": 28,
+  "textDecoration": none,
+  "fontFamily": Lato,
+  "fontWeight": 300,
+  "fontStyle": normal,
+  "fontStretch": normal,
+  "letterSpacing": 0,
+  "lineHeight": 40,
+  "paragraphIndent": 0,
+  "paragraphSpacing": 0,
+  "textCase": none,
+) !default;
+$font-default-paragraph: (
+  "fontSize": 18,
+  "textDecoration": none,
+  "fontFamily": Lato,
+  "fontWeight": 300,
+  "fontStyle": normal,
+  "fontStretch": normal,
+  "letterSpacing": 0,
+  "lineHeight": 28,
+  "paragraphIndent": 0,
+  "paragraphSpacing": 0,
+  "textCase": none,
+) !default;
+$font-default-subheader: (
+  "fontSize": 32,
+  "textDecoration": none,
+  "fontFamily": Newsreader,
+  "fontWeight": 300,
+  "fontStyle": normal,
+  "fontStretch": normal,
+  "letterSpacing": 0,
+  "lineHeight": 48,
+  "paragraphIndent": 0,
+  "paragraphSpacing": 0,
+  "textCase": none,
+) !default;
+
+$tokens: (
+  "sizes": (
+    "xs": (
+      "desktop": $sizes-xs-desktop,
+      "default": $sizes-xs-default,
+    ),
+    "sm": (
+      "desktop": $sizes-sm-desktop,
+      "default": $sizes-sm-default,
+    ),
+    "md": (
+      "desktop": $sizes-md-desktop,
+      "default": $sizes-md-default,
+    ),
+    "lg": (
+      "desktop": $sizes-lg-desktop,
+      "default": $sizes-lg-default,
+    ),
+    "xl": (
+      "desktop": $sizes-xl-desktop,
+      "default": $sizes-xl-default,
+    ),
+    "grid": (
+      "main": (
+        // "desktop": $sizes-grid-main-desktop,
+        // "tablet": $sizes-grid-main-tablet,
+        "tablet": 1200px, //$sizes-grid-main-default,
+      ),
+    ),
+  ),
+  "breakpoints": (
+    "desktop": $breakpoints-desktop,
+    "tablet": $breakpoints-tablet,
+    "tablet-wide": $breakpoints-tablet-wide,
+    "mobile": $breakpoints-mobile,
+  ),
+  "color": (
+    "black": $color-black,
+    "white": $color-white,
+    "green": $color-green,
+    "grey": (
+      "light": $color-grey-light,
+      "medium*": $color-grey-medium,
+      "dark": $color-grey-dark,
+      "darkest": $color-grey-darkest,
+    ),
+  ),
+  "grid": (
+    "main": (
+      // "desktop": $grid-main-desktop,
+      // "default": $grid-main-default,
+      "tablet": $grid-main-tablet,
+      "default": $grid-main-default,
+    ),
+  ),
+  "font": (
+    "desktop": (
+      "header": $font-desktop-header,
+      "intro": $font-desktop-intro,
+      "paragraph": $font-desktop-paragraph,
+      "subheader": $font-desktop-subheader,
+    ),
+    "default": (
+      "header": $font-default-header,
+      "intro": $font-default-intro,
+      "paragraph": $font-default-paragraph,
+      "subheader": $font-default-subheader,
+    ),
+  ),
+);
