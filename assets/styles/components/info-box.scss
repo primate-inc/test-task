@@ -2,7 +2,7 @@
   @include responsive-grid();
 
   &__inner {
-    grid-column: slot(grid, text);
+    grid-column: slot(grid, wide);
   }
 
   &__content {
@@ -11,6 +11,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+    max-width: 66ch;
 
     &-intro {
       @include typography('text xl');
