@@ -12,8 +12,7 @@ $configs: (
     // Value: quoted string of valid css font-family
     fontFallbacks:
       (
-        "Lato": "Arial, Verdana, sans-serif",
-        "Newsreader": "Times New Roman, serif",
+        "Plus Jakarta Sans": "sans-serif"
       ),
 
     // Fluid typography config
@@ -21,11 +20,11 @@ $configs: (
     fluid:
       (
         // Default range
-        header:
-          (
-            start: default,
-            end: desktop,
-          )
+        // 'heading xl':
+        //   (
+        //     start: default,
+        //     end: desktop,
+        //   )
       ),
   ),
   breakpoints: (

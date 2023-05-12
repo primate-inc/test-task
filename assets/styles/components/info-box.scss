@@ -1,0 +1,25 @@
+.info-box {
+  @include responsive-grid();
+
+  &__inner {
+    grid-column: slot(grid, text);
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    &-intro {
+      @include typography('text xl');
+      margin-bottom: 1.5em;
+      color: slot(page, accent);
+    }
+
+    &-paragraph {
+      @include typography('text md');
+    }
+  }
+}
