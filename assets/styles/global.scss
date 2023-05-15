@@ -42,6 +42,8 @@ body {
 
   @include responsive-slot('padding-top', page, spacing);
   @include responsive-slot('padding-bottom', page, spacing);
+
+  overflow: hidden;
 }
 
 .component {

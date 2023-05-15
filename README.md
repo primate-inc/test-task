@@ -10,13 +10,19 @@ The task is to add heading and listing components to the project. For the headin
 
 ## Getting Started
 
-To start the project, you will need a package manager such as npm, yarn, pnpm, etc. Follow these steps:
+To start the project, you will need a node (at least v16 but we used v18 in project tests) and a node package manager such as npm, yarn, pnpm, etc. 
+Once you've got it, follow these steps:
 
 1. Install dependencies: `pnpm install`
 2. Run the project: `pnpm start`
+3. Go to [http://localhost:1234](http://localhost:1234) to see the project.
 
 ## Note
 
+### Parcel
+We use parcel for compilation, it sometimes struggle with updating after changes. Just give it a restart, re-running `pnpm start` command and it should be good to go.
+
+### Mono
 This project uses the `@primate-inc/mono` package, which provides helpful utilities for working with SCSS and Figma. You are encouraged to explore and leverage this package during your development process.
 
 Examples of how to use this package can be found within this project. For more information, you can also visit the package repository at [https://github.com/primate-inc/mono](https://github.com/primate-inc/mono).
