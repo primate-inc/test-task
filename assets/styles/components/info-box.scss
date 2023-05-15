@@ -16,9 +16,7 @@
     &-intro {
       @include typography('text xl');
       margin-bottom: 1.5em;
-      color: slot(page, accent);
     }
-
     &-paragraph {
       @include typography('text md');
     }

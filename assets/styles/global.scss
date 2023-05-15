@@ -57,4 +57,26 @@ body {
   &:last-child { margin-bottom: 0; }
 }
 
+.main-content-ol {
+  list-style: decimal;
+  list-style-position: inside;
+  margin-bottom: 1.5em;
+  li {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+}
+.main-content-link {
+  color: slot(page, accent);
+}
 
+.main-content-strong {
+  font-weight: bold;
+}
+.main-content-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5em;
+}
