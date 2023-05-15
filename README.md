@@ -6,7 +6,9 @@ This project serves as an assessment of your skills and provides an opportunity 
 
 Your task will focus on HTML and CSS (SCSS) and will involve working with the project structure and using GitHub. You will be assessed on your knowledge of working with design files.
 
-The task is to add heading and listing components to the project. For the heading component, you need to write semantic HTML structure along with CSS styles that match the provided designs. For the listing component, the HTML structure is already provided, so focus on the CSS styles and make changes only if necessary.
+Please fork this repository and when you are done with your work create a PR so we can take a look at your work. Thank you.
+
+The task is to add Call to action and listing components to the project. For the CTA component, you need to write semantic HTML structure along with CSS styles that match the provided designs. For the listing component, the HTML structure is already provided, so focus on the CSS styles and make changes only if necessary.
 
 ## Getting Started
 
