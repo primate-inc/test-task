@@ -1,0 +1,54 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding-bottom: 1.5rem;
+
+    &__inner {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > div:first-child {
+            width: 35%;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        &__inner {
+            width: 80%;
+            > div:first-child {
+                width: 45%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        &__inner {
+            width: 95%;
+            > div:first-child {
+                width: 50%;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 25px;
+        padding: 1rem 0px;
+        font-weight: bold;
+    }
+
+    &__description {
+        line-height: 25px;
+    }
+
+    &__button {
+        border: rgb(56, 56, 56) 1px solid;
+        display: inline-block;
+        padding: 15px 30px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: rgb(56, 56, 56);
+        text-decoration: none;
+    }
+}

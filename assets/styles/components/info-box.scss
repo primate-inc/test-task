@@ -3,6 +3,7 @@
 
   &__inner {
     grid-column: slot(grid, wide);
+    display: none;
   }
 
   &__content {
