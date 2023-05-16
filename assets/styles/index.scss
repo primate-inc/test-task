@@ -33,7 +33,9 @@ a {
     }
 
     &__btn {
-        width: 20%;
+        display: flex;
+        justify-content: center;
+        width: 30%;
         color: black;
         background-color: white;
         padding: 10px 20px;
@@ -155,6 +157,15 @@ a {
 // Tablet Styles
 @media (max-width: $tablet-screen) {
 
+    .cta-component {
+        width: 90%;
+        padding: 50px 20px;
+
+        &__btn {
+            width: 37%;
+        }
+    }
+
     .listing__inner {
         padding: 20px;
     }
@@ -173,6 +184,13 @@ a {
 // Mobile Styles
 
 @media (max-width: $mobile-screen) {
+
+    .cta-component {
+        margin-bottom: 10px;
+        &__content {
+            width: 100%;
+        }
+    }
 
     .listing__inner {
         flex-direction: column;
