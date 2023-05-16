@@ -1,28 +1,24 @@
 .listing {
 
-  // USE $_then-nested-asset
+  & {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    height: 60%;
+
+  }
+
+  &__item {
+    width: 33%;
+  }
 
 
-  // @include responsive-grid();
-
-  // &__inner {
-  //   grid-column: slot(grid, wide);
-  // }
-
-  // &__content {
-  //   display: flex;
-  //   flex-flow: column nowrap;
-  //   justify-content: flex-start;
-  //   align-items: flex-start;
-  //   width: 100%;
-  //   max-width: 66ch;
-
-  //   &-intro {
-  //     @include typography('text xl');
-  //     margin-bottom: 1.5em;
-  //   }
-  //   &-paragraph {
-  //     @include typography('text md');
-  //   }
-  // }
 }

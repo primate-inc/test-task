@@ -1,13 +1,15 @@
 .card {
 
+  &__media {
+    width: 100%;
+    height: 100%;
+  }
 
-  // works
-  // &__body-label {
-  //   font-size: 500px;
-  // }
+  &__media-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
 
-  // USE $_then-nested-asset
-
-
-  // <!-- all components with card__should be nested in card component -->
 }
