@@ -6,4 +6,21 @@
 
 @import "components/info-box.scss";
 
+.listing__inner{
+    display: flex;
+    justify-content: center;
+    gap: 1.2em;
+}
 
+.card {
+    position: relative;
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card__media {
+    position: absolute;
+    z-index: -1;
+}
