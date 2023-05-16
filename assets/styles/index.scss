@@ -78,6 +78,27 @@ a {
         &-label {
             font-size: 0.8em;
             font-weight: 600;
+
+            & strong {
+                padding: 5px;
+                border-radius: 5px;
+
+                &.first-strong {
+                    background-color:lavender;
+                    color: purple;
+                    
+                }
+
+                &.second-strong {
+                    background-color:lightblue;
+                    color: blue;
+                }
+
+                &.third-strong {
+                    background-color:white;
+                    color: black;
+                }
+            }
         }
 
         &-title {
