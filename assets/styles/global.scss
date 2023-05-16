@@ -32,6 +32,16 @@ body {
   position: relative;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+}
+
+p {
+  line-height: 1.4;
+}
+
 .main {
   align-items: center;
   display: flex;

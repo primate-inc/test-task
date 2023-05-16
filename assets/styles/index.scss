@@ -13,13 +13,39 @@ a {
     text-decoration: none;
 }
 
+.cta-component {
+    width: 86%;
+    padding: 100px 20px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #fff0 0%, #00000038 55%), url("https://source.unsplash.com/random/1200x600/?travel"), no-repeat, ;
+    background-size: cover;
+    background-position: 50%;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 40%;
+
+        & h2, & p {
+            color: white;
+        }
+    }
+
+    &__btn {
+        width: 20%;
+        color: black;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+}
+
 .listing__inner{
     display: flex;
     justify-content: center;
     padding: 50px;
     gap: 1.2em;
-
-
 }
 
 .card {
@@ -83,22 +109,22 @@ a {
             font-weight: 600;
             margin-bottom: 5px;
 
-            & strong {
+            & span {
                 padding: 5px 7px;
                 border-radius: 5px;
 
-                &.first-strong {
+                &.first-span {
                     background-color:lavender;
                     color: purple;
                     
                 }
 
-                &.second-strong {
+                &.second-span {
                     background-color:lightblue;
                     color: blue;
                 }
 
-                &.third-strong {
+                &.third-span {
                     background-color:white;
                     color: black;
                 }
