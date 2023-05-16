@@ -29,7 +29,7 @@
     padding: 20px;
   }
 
-  &__body-label {
+  &__body-label-1 {
     @include typography('label sm');
     background-color: $color-secondary-100;
     color: $color-secondary-800;
@@ -39,16 +39,36 @@
     margin-bottom: 15px
   }
 
+  &__body-label-2 {
+    @include typography('label sm');
+    background-color: $color-primary-100;
+    color: $color-primary-500;
+    padding: 7px 18px 7px 18px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 15px
+  }
+
+  &__body-label-3 {
+    @include typography('label sm');
+    background-color: rgba(244, 244, 244, 255);
+    color: rgba(74, 74, 81, 255);
+    padding: 7px 18px 7px 18px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 15px
+  }
+
   &__body-title {
     @include typography('heading md');
     margin-top: 20px;
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    text-shadow: rgb(0, 0, 0) 1 0 7px;
   }
 
   &__body-location {
-    @include typography('text sm');
+    @include typography('text md');
     margin-top: 15px;
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    text-shadow: rgb(0, 0, 0) 1px 0 7px;
   }
 
 }
