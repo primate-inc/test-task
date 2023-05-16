@@ -1,8 +1,9 @@
 .card {
-
   & {
+    width: 33%;
     overflow: hidden;
     border-radius: 10px;
+    color: white;
   }
 
   &__media {
@@ -20,6 +21,32 @@
 
   &__media-image:hover {
     scale: 107%;
+  }
+
+  &__body {
+    position: absolute;
+    bottom: 180px;
+    padding: 20px;
+  }
+
+  &__body-label {
+    @include typography('label sm');
+    background-color: $color-secondary-100;
+    color: $color-secondary-800;
+    padding: 7px 18px 7px 18px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 15px
+  }
+
+  &__body-title {
+    @include typography('heading md');
+    margin-top: 20px
+  }
+
+  &__body-location {
+    @include typography('text sm');
+    margin-top: 15px
   }
 
 }

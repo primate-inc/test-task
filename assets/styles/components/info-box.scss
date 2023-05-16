@@ -17,6 +17,7 @@
       @include typography('text xl');
       margin-bottom: 1.5em;
     }
+
     &-paragraph {
       @include typography('text md');
     }
