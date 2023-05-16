@@ -1,94 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/index.scss" />
-  </head>
-  <body>
-    <main class="main">
-      <div class="component info-box">
-        <div class="info-box__inner">
-          <div class="info-box__content">
-            <p class="info-box__content-intro">
-            Welcome! <br/>
-            It's great to see you, future front-end developer at Primate.<br/>
-            </p>
-            <p class="info-box__content-paragraph">
-            We've created this exercise to put your front-end skills to the test, but to also give you a taster of what kind of stuff you will be working on in your first weeks at the company.
-            </p>
-            <p class="info-box__content-paragraph">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/index.scss" />
+</head>
+
+<body>
+  <main class="main">
+    <div class="component info-box">
+      <div class="info-box__inner">
+        <div class="info-box__content">
+          <p class="info-box__content-intro">
+            Welcome! <br />
+            It's great to see you, future front-end developer at Primate.<br />
+          </p>
+          <p class="info-box__content-paragraph">
+            We've created this exercise to put your front-end skills to the test, but to also give you a taster of what
+            kind of stuff you will be working on in your first weeks at the company.
+          </p>
+          <p class="info-box__content-paragraph">
             There are two main things we'd like you to do:
-            </p>
-            <ol class='main-content-ol'>
-              <li>Style the cards component below so it is responsive and matches the design</li>
-              <li>Based on the strucuture and naming convention of 'Cards' component create and style another one for the simple 'Call to Action'.</li>
-            </ol>
-            <p class="info-box__content-paragraph">
-            You can find the design mock-up file <a class='main-content-link' href='https://www.figma.com/proto/rjsMYOxEfewywzocLenXfl/Primate-Dev-Test?node-id=112%3A1393'>here</a>, and the main design reference file <a class='main-content-link' href='https://www.figma.com/file/rjsMYOxEfewywzocLenXfl/Primate-Dev-Test?type=design&t=Jv2H6jHdXGme4E1V-6'>here</a>.
-            </p>
-            <p class="info-box__content-paragraph">
-              Keep in mind that we only want the <strong class='main-content-strong'>two components</strong> mentioned above, and not the whole page.
-            </p>
-            <p class="info-box__content-paragraph">
-              Here's a screengrab of the scope of this exercise:
-            </p>
-            <img class='main-content-image' src='assets/images/screenshot.png' alt='' />
-            <p class="info-box__content-paragraph">
-              We quite like the HTML structure for the cards below so don't alter it too much unless you have to, but do what you think is the best for the CTA.
-              <br/>
-              <strong class='main-content-strong'>Good luck and have fun!</strong>
-            </p>
+          </p>
+          <ol class='main-content-ol'>
+            <li>Style the cards component below so it is responsive and matches the design</li>
+            <li>Based on the strucuture and naming convention of 'Cards' component create and style another one for the
+              simple 'Call to Action'.</li>
+          </ol>
+          <p class="info-box__content-paragraph">
+            You can find the design mock-up file <a class='main-content-link'
+              href='https://www.figma.com/proto/rjsMYOxEfewywzocLenXfl/Primate-Dev-Test?node-id=112%3A1393'>here</a>,
+            and the main design reference file <a class='main-content-link'
+              href='https://www.figma.com/file/rjsMYOxEfewywzocLenXfl/Primate-Dev-Test?type=design&t=Jv2H6jHdXGme4E1V-6'>here</a>.
+          </p>
+          <p class="info-box__content-paragraph">
+            Keep in mind that we only want the <strong class='main-content-strong'>two components</strong> mentioned
+            above, and not the whole page.
+          </p>
+          <p class="info-box__content-paragraph">
+            Here's a screengrab of the scope of this exercise:
+          </p>
+          <img class='main-content-image' src='assets/images/screenshot.png' alt='' />
+          <p class="info-box__content-paragraph">
+            We quite like the HTML structure for the cards below so don't alter it too much unless you have to, but do
+            what you think is the best for the CTA.
+            <br />
+            <strong class='main-content-strong'>Good luck and have fun!</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- component listing should be 100vh / all components with listing__should be nested in listing component -->
+    <div class="component listing">
+
+
+      <!-- listing inner should relate to card height as bucket with row wrap flex direction and relevant gap -->
+      <div class="listing__inner">
+
+        <!-- listing item card should have 100% height -->
+        <a href="#" class="listing__item card">
+          <div class="card__media">
+            <img class="card__media-image" src="https://source.unsplash.com/random/600x1200/?norway"
+              alt="Placeholder image" />
           </div>
-        </div>
+
+          <!-- all components with card__should be nested in card component -->
+          <!-- card__body should have display flex column justify content flex end -->
+          <div class="card__body">
+            <div class="card__body-label">Adventure</div>
+            <div class="card__body-title">Breathtaking views with our adventure tours</div>
+            <div class="card__body-location">Norway</div>
+          </div>
+        </a>
+
+        <a href="#" class="listing__item card">
+          <div class="card__media">
+            <img class="card__media-image" src="https://source.unsplash.com/random/900x600/?italy"
+              alt="Placeholder image" />
+          </div>
+
+          <div class="card__body">
+            <div class="card__body-label">Luxury</div>
+            <div class="card__body-title">Luxury Retreats in Europes most beautiful cities</div>
+            <div class="card__body-location">Italy</div>
+          </div>
+        </a>
+
+        <a href="#" class="listing__item card">
+          <div class="card__media">
+            <img class="card__media-image" src="https://source.unsplash.com/random/600x600/?greece"
+              alt="Placeholder image" />
+          </div>
+
+          <div class="card__body">
+            <div class="card__body-label">Romantic</div>
+            <div class="card__body-title">Romantic Escapes that you will never forget</div>
+            <div class="card__body-location">Greece</div>
+          </div>
+        </a>
+
       </div>
+    </div>
 
-      <div class="component listing">
-        <div class="listing__inner">
+  </main>
+</body>
 
-          <a href="#" class="listing__item card">
-            <div class="card__media">
-              <img class="card__media-image" src="https://source.unsplash.com/random/600x1200/?norway" alt="Placeholder image" />
-            </div>
-
-            <div class="card__body">
-              <div class="card__body-label">Adventure</div>
-              <div class="card__body-title">Breathtaking views  with our adventure tours</div>
-              <div class="card__body-location">Norway</div>
-            </div>
-          </a>
-
-          <a href="#" class="listing__item card">
-            <div class="card__media">
-              <img class="card__media-image" src="https://source.unsplash.com/random/900x600/?italy" alt="Placeholder image" />
-            </div>
-
-            <div class="card__body">
-              <div class="card__body-label">Luxury</div>
-              <div class="card__body-title">Luxury Retreats in Europes  most beautiful cities</div>
-              <div class="card__body-location">Italy</div>
-            </div>
-          </a>
-
-          <a href="#" class="listing__item card">
-            <div class="card__media">
-              <img class="card__media-image" src="https://source.unsplash.com/random/600x600/?greece" alt="Placeholder image" />
-            </div>
-
-            <div class="card__body">
-              <div class="card__body-label">Romantic</div>
-              <div class="card__body-title">Romantic Escapes that you will never forget</div>
-              <div class="card__body-location">Greece</div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-
-    </main>
-  </body>
 </html>
