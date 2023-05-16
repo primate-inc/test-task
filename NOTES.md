@@ -3,7 +3,7 @@
 - Import a component SCSS for cards to index.scss
 - research how scss works
 - install all packages and research `@primate-inc/mono` (see readme)
-- Ask for calrification on CTA component, is this see all button? Or do we create out own content? (could be blue book trip button at top)
+- CTA component is entire section above cards (i.e. text and button on right)
 
 <!-- Code -->
 
