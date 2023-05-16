@@ -13,4 +13,7 @@ follow design steps of other components
 Thoroughly comment and clean up code
 Add media queuries to ensure cards are mobile friendly
 
+<!-- others -->
+
+use npm start to run site in parcel
 
