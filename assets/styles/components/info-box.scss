@@ -14,11 +14,11 @@
     max-width: 66ch;
 
     &-intro {
-      @include typography('text xl');
+      @include typography("text xl");
       margin-bottom: 1.5em;
     }
     &-paragraph {
-      @include typography('text md');
+      @include typography("text md");
     }
   }
 }
