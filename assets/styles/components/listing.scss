@@ -1,0 +1,144 @@
+/* 
+Explanation of the SCSS code:
+
+- The `@mixin set-font` defines a reusable mixin to set the font properties such as size, weight, color, and other related properties.
+
+- The `.listing` and `.listing__inner` selectors are used to style the container elements with flexbox properties to center their contents horizontally.
+
+- The `.listing` selector sets the width, height, and padding for the listing container. It also defines the dimensions, padding, and gap for the inner container `.listing__inner`.
+
+- The `.card` selector styles the individual card element. It sets the display to flex and flex-direction to column to arrange the card's content vertically. It also defines various other styles such as width, height, border-radius, box-shadow, and overflow.
+
+- The `.card__media` selector styles the media (image) section of the card. It sets the position to relative, overflow to hidden, and applies a linear gradient overlay on top of the image using the `::after` pseudo-element. It also sets transition effects on the media image for a hover effect.
+
+- The `.card__body` selector styles the body section of the card. It sets the position to absolute, bottom to 0 to align it at the bottom, and color to white. It also positions the label, title, and location elements using absolute positioning.
+
+- The `.card__body-label` and `.card__body-title` selectors style the label and title elements respectively. They set the position, background, padding, border-radius, font properties using the `set-font` mixin, and line-height.
+
+- The `.card__body-location` selector styles the location element. It sets the position, font properties using the `set-font` mixin, and also adds a map pin icon using the `::before` pseudo-element.
+
+This SCSS code represents a styling structure for a listing of cards with various elements like media, label, title, and location. The `set-font` mixin helps to maintain consistent font styling throughout the code.
+ */
+
+@mixin set-font($size, $weight, $font-color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $font-color;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.listing, .listing__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.listing {
+    width: 100%;
+    height: 35rem;
+    padding: 0 5rem 5rem 5rem;
+
+    .listing__inner {
+        width: 80rem;
+        height: 30rem;
+        padding: 0 2rem 0 2rem;
+        gap: 1.5rem;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 24rem;
+        height: 30rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-decoration: none;
+    
+        .card__media {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+    
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+                pointer-events: none;
+            }
+    
+            .card__media-image {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.3s;
+            }
+    
+            &:hover .card__media-image {
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+        }
+    
+        .card__body {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 40%;
+            color: white;
+    
+            .card__body-label,
+            .card__body-title {
+                position: absolute;
+                top: 3rem;
+                left: 1.5rem;
+            }
+            .card__body-label {
+                padding: 0.25rem 0.625rem 0.25rem 0.625rem;
+                height: 1.5rem;
+                background: #ECE9FE;
+                border-radius: 0.25rem;  
+                @include set-font(0.75rem, 600, #175CD3);
+                text-align: center;
+                line-height: 1rem;
+            }
+            .card__body-title {
+                position: absolute;
+                top: 5.25rem;
+                right: 1.5rem;
+                @include set-font(1.5rem, 700, #FFFFFF);
+                line-height: 1.875rem;
+            }
+    
+            .card__body-location {
+                position: absolute;
+                top: 9.6rem;
+                left: 1.5rem;
+                @include set-font(0.875rem, 600, #FFFFFF);
+                line-height: 1rem;
+                
+                &::before {
+                    display: inline-block;
+                    content: url("../icons/map-pin.svg");
+                    width: 11.2px;
+                    height: 13.6px;
+                    margin: 2.6px 6.4px 1.8px 0;
+                    vertical-align: text-top;
+                }
+            }
+        }
+    }
+}

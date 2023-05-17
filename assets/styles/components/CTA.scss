@@ -1,0 +1,88 @@
+// Mixin to set font properties
+@mixin set-font($size, $weight, $font-color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $font-color;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+}
+
+// Colors
+$primary-color: #18181B;
+$secondary-color: #3F3F46;
+$border-color: #26272B;
+
+// Styles for CTA and CTA__inner classes
+.CTA, .CTA__inner {
+    display: flex;
+    justify-content: center;
+    height: 13.25rem;
+}
+
+.CTA {
+    width: 100%;
+    padding: 0 5rem 5rem 5rem;
+
+    .CTA__inner {
+        width: 80rem;
+        flex-direction: row-reverse;
+        padding: 0 2rem 0 2rem;
+
+        button {
+            width: 7.5rem;
+            height: 2.75rem;
+            padding: 0;
+            background-color: #FFFFFF;
+            border: 1px solid #D1D1D6;
+            border-radius: 8px;
+            transition: border 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            
+            &:hover {
+                border: 1.5px solid $border-color;
+            }
+
+            span:first-of-type {
+                display: inline-block;
+                @include set-font(1rem, 600, $secondary-color);
+                width: 4.25rem;
+                height: 1.25rem;
+            }
+
+            span:last-of-type {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: transparent;
+                border-color: $border-color $border-color transparent transparent;
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 2.5px;
+                transform: rotate(45deg);
+            }
+        }
+
+        .CTA__content {
+            display: flex;
+            flex-direction: column;
+            width: 33.25rem;
+            height: 8.25rem;
+            gap: 1.5rem;
+            margin-right: 35.25rem;
+
+            .CTA__title {
+                @include set-font(2.5rem, 700, $primary-color);
+                line-height: 3.1255rem;
+            }
+
+            .CTA_des {
+                @include set-font(1.125rem, 400, $primary-color);
+                line-height: 160%;
+                letter-spacing: 0.02em;
+
+            }
+        }
+    }
+}

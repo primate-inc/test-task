@@ -7,6 +7,9 @@
         "clean": "rm -rf dist && rm -rf .parcel-cache",
         "dev": "parcel index.html --no-cache --no-hmr",
         "start": "run-s clean dev",
+        "clean-win": "rd /s /q dist && rd /s /q .parcel-cache",
+        "mydev": "parcel index.html",
+        "mystart": "run-s clean-win mydev", 
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
