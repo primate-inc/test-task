@@ -1,4 +1,5 @@
 .card {
+
   & {
     width: 33%;
     overflow: hidden;
@@ -25,7 +26,7 @@
 
   &__body {
     position: absolute;
-    bottom: 180px;
+    bottom: 35px;
     padding: 20px;
   }
 

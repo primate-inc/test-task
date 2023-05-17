@@ -1,8 +1,11 @@
 .listing {
+  // @include responsive-grid();
+
 
   & {
     height: 100vh;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
   }
 
@@ -15,5 +18,17 @@
     height: 60%;
 
   }
+
+  &__cta {
+    height: 20%;
+    width: 85%;
+    margin: auto;
+    background-color: black;
+  }
+
+  // &__cta-item {
+  //   height: 100%;
+
+  // }
 
 }
