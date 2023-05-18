@@ -6,4 +6,117 @@
 
 @import "components/info-box.scss";
 
+$large-screen-size: 1200px;
+$tablet-size: 768px;
+$smartphone-size: 480px;
 
+$label: #6927DA;
+$label-background: #ECE9FE;
+$title : #fff;
+$location : #fff;
+
+
+a {
+  text-decoration: none;
+}
+
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 70px;
+    gap: 14px;
+    width: 80%;
+}
+
+.listing__item {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 33%;
+  height: 480px;
+  margin: 0 30px 30px;
+  border-radius: 5px;
+
+
+  .card__media{
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .card__body {
+    position: absolute;
+    align-self: end;
+
+    &-label {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      color: $label;
+      margin-left: 14px;
+      padding: 8px;
+      background-color: $label-background;
+      border-radius: 4px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: $title;
+      margin: 14px;
+    }
+    &-location {
+      font-size: 14px;
+      font-weight: 700;
+      color: $location;
+      margin-left: 14px;
+      margin-bottom: 14px;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        background-image: url("/assets/icons/map-pin.svg");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+@media (max-width: $large-screen-size) {
+  .listing__inner {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: $tablet-size) {
+  .listing__inner {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .listing__item {
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: $smartphone-size) {
+  .listing__inner {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .listing__item {
+    flex-basis: 100%;
+  }
+}
