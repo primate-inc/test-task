@@ -1,7 +1,8 @@
 .cta {
 
+  // MEDIA QUERY FOR TABLET AND SMALLER DISPLAYS BUTTON BELOW CENTERED TEXT IN CTA
 
-  @media(max-width: 799px) {
+  @media(max-width: 1023px) {
 
     & {
       height: 20%;
@@ -46,7 +47,9 @@
 
   }
 
-  @media(min-width: 800px) {
+  // MEDIA QUERY FOR LAPTOP DISPLAYS CTA AS IN REFERENCE
+
+  @media(min-width: 1024px) {
 
     & {
       height: 20%;

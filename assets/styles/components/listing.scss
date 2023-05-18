@@ -1,7 +1,9 @@
 .listing {
 
 
-  @media(max-width: 799px) {
+  // MEDIA QUERY FOR TABLET AND LOWER - CONTAINER FOR CARDS - SETS TO COLUMN
+
+  @media(max-width: 1023px) {
 
     & {
       display: flex;
@@ -21,7 +23,9 @@
 
   }
 
-  @media(min-width: 800px) {
+  // MEDIA QUERY FOR LAPTOP - CONTAINER FOR CARDS - SETS TO ROW
+
+  @media(min-width: 1024px) {
 
     & {
       height: 100vh;
