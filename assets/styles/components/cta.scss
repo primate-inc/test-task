@@ -1,0 +1,62 @@
+.cta {
+  @include responsive-grid();
+
+  &__inner {
+    grid-column: slot(grid, wide);
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 80px 0px;
+    gap: 24px;
+
+    &-intro {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-heading {
+        @include screen(desktop) {
+          @include typography('heading lg');
+        }
+
+        @include typography('heading lg');
+        color: token(color, neutrals, '900');
+      }
+
+      &-button {
+        @include screen(desktop) {
+          @include typography('label md');
+        }
+
+        @include typography('label md');
+        color: token(color, neutrals, '700');
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 8px;
+        border-color: token(color, neutrals, '300');
+        background-color: token(color, base, 'white');
+        padding: 12px 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 120px;
+        height: 44px;
+      }
+    }
+
+    &-paragraph {
+      @include screen(desktop) {
+        @include typography('text lg');
+      }
+
+      @include typography('text lg');
+      color: token(color, neutrals, '900');
+      width: 532px;
+      height: 58px;
+    }
+  }
+}
