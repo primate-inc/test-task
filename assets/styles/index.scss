@@ -6,4 +6,193 @@
 
 @import "components/info-box.scss";
 
+$primary: #175cd3;
+$secondary: #6927da;
+$neutrals: #3f3f46;
 
+$background-primary: #d1e9ff;
+$background-secondary: #ece9fe;
+$background-neutrals: #f4f4f4;
+
+.listing {
+  max-width: 100%;
+}
+
+.listing__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.listing__item {
+  width: 320px;
+  height: 480px;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 20px;
+
+  &:nth-child(1) {
+    .card__body-label {
+      color: $secondary;
+      background: $background-secondary;
+    }
+  }
+
+  &:nth-child(2) {
+    .card__body-label {
+      color: $primary;
+      background: $background-primary;
+    }
+  }
+
+  &:nth-child(3) {
+    .card__body-label {
+      color: $neutrals;
+      background: $background-neutrals;
+    }
+  }
+
+  .card__media {
+    position: relative;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .card__media-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+      z-index: 1;
+    }
+  }
+
+  .card__body {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: #ffffff;
+    z-index: 2;
+
+    .card__body-label {
+      font-family: "Plus Jakarta Sans";
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 125%;
+      text-align: left;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .card__body-title {
+      margin-top: 12px;
+      font-family: "Plus Jakarta Sans";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 125%;
+      color: #ffffff;
+    }
+
+    .card__body-location {
+      margin-top: 12px;
+      font-family: "Plus Jakarta Sans";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 125%;
+      position: relative;
+      padding-left: 24px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        background-image: url("/assets/icons/map-pin.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.cta {
+  max-width: 100%;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 320px;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+    margin: 20px;
+
+    .card__body {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #ffffff;
+      z-index: 2;
+
+      .card__body-label {
+        font-family: "Plus Jakarta Sans";
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 125%;
+        text-align: center;
+        padding: 4px 10px;
+        border-radius: 4px;
+        display: inline-block;
+        background-color: $primary;
+      }
+
+      .card__body-title {
+        margin-top: 12px;
+        font-family: "Plus Jakarta Sans";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 125%;
+        color: $primary;
+      }
+
+      .card__body-description {
+        margin-top: 12px;
+        font-family: "Plus Jakarta Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: $primary;
+      }
+    }
+  }
+}
