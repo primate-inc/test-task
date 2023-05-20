@@ -4,6 +4,7 @@
   &__inner {
     grid-column: slot(grid, wide);
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -13,6 +14,7 @@
     width: 389px;
     height: 480px;
     border-radius: 8px;
+    margin-bottom: 20px;
 
     &__media {
         position: relative;
@@ -62,7 +64,6 @@
 
   }
   &:nth-child(2) {
-    margin: 0 24.33px 0 24.33px;
     .card__body-label {
       background: #D1E9FF;
       color: #175CD3; /* Set the color for the second card */
