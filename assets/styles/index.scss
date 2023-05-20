@@ -5,5 +5,167 @@
 @import "global";
 
 @import "components/info-box.scss";
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  cursor: initial;
+}
+img {
+  max-width: 100%;
+  //   border-radius: 20px;
+  width: 389px;
+  cursor: initial;
+  height: 480px;
+  object-fit: cover;
+}
 
+// CSS Variables
+:root {
+  // Colors
+  --heading-Paragraph: #18181b;
+  --first-card-body-label: #6927da;
+  --first-card-body-label-bg: #ece9fe;
+  --second-card-body-label-bg: #d1e9ff;
+  --three-card-body-label-bg: #f4f4f4;
+  --second-card-body-label: #175cd3;
+  --three-card-body-label: #3f3f46;
+  --card-body-title-location: #ffffff;
+}
+// General Styles
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+button {
+  display: block;
+  cursor: pointer;
+  padding: 12px 16px;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+// Typography
+.card:nth-child(1) .card__body-label {
+  background-color: var(--first-card-body-label);
+  padding: 0.5em;
+  color: var(--first-card-body-label-bg);
+}
+.card:nth-child(2) .card__body-label {
+  background-color: var(--second-card-body-label);
+  padding: 0.5em;
+  color: var(--second-card-body-label-bg);
+}
+.card:nth-child(3) .card__body-label {
+  background-color: var(--three-card-body-label);
+  padding: 0.5em;
+  color: var(--three-card-body-label-bg);
+}
+// Blocks
 
+// SECTION
+.container,
+.listing__inner {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+}
+.heading__destinations {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 50px;
+
+  font-family: Plus Jakarta Sants;
+}
+.paragraph__exploring {
+  font-family: Plus Jakarta Sants;
+  margin-bottom: 3em;
+}
+
+// Listing Item Card
+.listing__inner {
+  display: flex;
+}
+// Card body
+.card__body {
+  position: relative;
+  width: 300px;
+}
+.card__body-label {
+  position: absolute;
+  bottom: 120px;
+  left: 10%;
+  color: white;
+}
+.card__body-title {
+  position: absolute;
+  bottom: 70px;
+  left: 10%;
+  color: white;
+}
+.card__body-location {
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  color: white;
+}
+// Card media
+.card__media {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.card__media .card__media-image {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  vertical-align: middle;
+}
+.card__media .card__media-image:hover {
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -moz-transform: scale(1.1); /* Firefox */
+  -ms-transform: scale(1.1); /* IE 9 */
+  -o-transform: scale(1.1); /* Opera */
+  transform: scale(1.1);
+  //   border-radius: 100px;
+}
+.card__media-image {
+  position: relative;
+}
+
+.card__media-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  box-shadow: 100px -90px 80px rgba(0, 0, 0, 1);
+  z-index: 1;
+}
+// Media Queries
+@media (max-width: 650px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .paragraph__exploring {
+    margin: 0.5em;
+  }
+
+  .listing__inner {
+    margin: 1em auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
