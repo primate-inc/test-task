@@ -1,0 +1,83 @@
+.listing {
+  @include responsive-grid();
+
+  &__inner {
+    grid-column: slot(grid, wide);
+    display: flex;
+  }
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 389px;
+    height: 480px;
+    border-radius: 8px;
+
+    &__media {
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+
+    &__body {
+      position: absolute;
+      z-index: 2;
+      top: 331.25px;
+      left: 0;
+      margin: 0 24px 0 24px;
+
+      &-label {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 125%;
+      }
+
+      &-title {
+        margin-top: 12px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 125%;
+        color: #FFFFFF;
+      }
+
+      &-location {
+        margin-top: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 125%;
+        color: #FFFFFF;
+      }
+  }
+
+  &:nth-child(1) {
+    .card__body-label {
+      background: #ECE9FE;
+      color: #6927DA; /* Set the color for the first card */
+    }
+
+  }
+  &:nth-child(2) {
+    margin: 0 24.33px 0 24.33px;
+    .card__body-label {
+      background: #D1E9FF;
+      color: #175CD3; /* Set the color for the second card */
+    }
+
+  }
+  &:nth-child(3) {
+    .card__body-label {
+      background: #F4F4F4;
+      color: #3F3F46; /* Set the color for the third card */
+    }
+  }
+}
+
+/* Image Zoom in */
+.card:hover .card__media {
+  transform: scale(1.1);
+}
