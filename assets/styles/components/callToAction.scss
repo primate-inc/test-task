@@ -1,0 +1,56 @@
+.callToAction {
+    @include responsive-grid();
+    margin-bottom: 80px;
+  
+    &__inner {
+      grid-column: slot(grid, wide);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__content {
+        &-intro {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 125%;
+        }
+
+        &-paragraph {
+            margin-top: 24px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &__button {
+        .icon-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+
+        width: 120px;
+        height: 44px;
+        background-color: #FFFFFF;
+
+        font-family: 'Plus Jakarta Sans';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        color: #3F3F46;
+
+        border: 1px solid #D1D1D6;
+        border-radius: 8px;
+
+        margin: auto;
+
+        .arrow-right {
+            margin-left: 10px;
+        }
+        }
+        
+    }
+  }
