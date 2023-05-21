@@ -10,17 +10,12 @@
 
     &__content {
         &-intro {
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 125%;
+            @include typography('heading lg');
         }
 
         &-paragraph {
             margin-top: 24px;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 160%;
-            letter-spacing: 0.02em;
+            @include typography('text lg');
         }
     }
 
@@ -34,13 +29,9 @@
 
         width: 120px;
         height: 44px;
-        background-color: #FFFFFF;
+        background: token(color, base, 'white');
 
-        font-family: 'Plus Jakarta Sans';
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 125%;
-        color: #3F3F46;
+        @include typography('label md');
 
         border: 1px solid #D1D1D6;
         border-radius: 8px;
