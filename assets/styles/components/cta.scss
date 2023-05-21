@@ -1,0 +1,65 @@
+.cta {
+
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0px;
+
+    @include screen(tablet) {
+        margin-bottom: 4rem;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive-slot('margin-bottom', component, spacing);
+    }
+
+    .title {
+        color: #18181B;
+        font-weight: 700;
+        font-size: 22px;
+
+        @include screen(tablet) {
+            font-size: 40px;
+        }
+    }
+
+    .text {
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+        color: #18181B;
+        font-size: 16px;
+
+        @include screen(tablet) {
+            font-size: 18px;
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        border: 1px solid #D1D1D6;
+        border-radius: 8px;
+        text-decoration: none !important;
+        font-weight: 600;
+        font-size: 16px;
+        color: #3F3F46;
+        transition: ease 0.3s ease;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            border-color: black;
+        }
+
+        .icon {
+            height: 15px;
+        }
+    }
+
+}

@@ -47,6 +47,7 @@ body {
 }
 
 .component {
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 
@@ -66,6 +67,7 @@ body {
     line-height: 1.4;
   }
 }
+
 .main-content-link {
   color: slot(page, accent);
 }
@@ -73,10 +75,26 @@ body {
 .main-content-strong {
   font-weight: bold;
 }
+
 .main-content-image {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5em;
+}
+
+.page-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  @include screen(desktop) {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
 }
