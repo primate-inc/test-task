@@ -31,9 +31,9 @@
     &__body {
       position: absolute;
       z-index: 2;
-      top: 331.25px;
-      left: 0;
-      margin: 0 24px 0 24px;
+      top: 283.25px;
+      padding: 48px 24px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 
       &-label {
         display: inline-block;
