@@ -5,6 +5,11 @@
     grid-column: slot(grid, wide);
     display: flex;
     justify-content: space-between;
+    
+    @include screen(tablet) {
+      flex-flow: row wrap;
+    }
+
   }
 }
 
@@ -41,39 +46,47 @@
 
       &-title {
         margin-top: 12px;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 125%;
-        color: #FFFFFF;
+        @include typography('heading sm');
+        color: token(color, base, 'white');
       }
 
       &-location {
         margin-top: 12px;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 125%;
-        color: #FFFFFF;
+        @include typography('label sm');
+        color: token(color, base, 'white');
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 11.2px;
+          height: 13.6px;
+          margin-right: 6.4px;
+          background-image: url("/assets/icons/map-pin.svg");
+        }
       }
   }
 
   &:nth-child(1) {
     .card__body-label {
-      background: #ECE9FE;
-      color: #6927DA; /* Set the color for the first card */
+      /* Set the color for the first card */
+      background: token(color, secondary, '100');
+      color: token(color, secondary, '700');
     }
 
   }
   &:nth-child(2) {
     .card__body-label {
-      background: #D1E9FF;
-      color: #175CD3; /* Set the color for the second card */
+      /* Set the color for the second card */
+      background: token(color, primary, '100');
+      color: token(color, primary, '700');
     }
 
   }
   &:nth-child(3) {
     .card__body-label {
-      background: #F4F4F4;
-      color: #3F3F46; /* Set the color for the third card */
+      /* Set the color for the third card */
+      background: token(color, neutrals, '100');
+      color: token(color, neutrals, '700');
     }
   }
 }
