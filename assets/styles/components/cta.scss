@@ -4,20 +4,43 @@
 	&__inner {
 		grid-column: slot(grid, wide);
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 40px;
+
+		@include screen(medium) {
+			flex-direction: row;
+			justify-content: space-between;
+			text-align: start;
+			margin-bottom: 80px;
+		}
 	}
 
 	&__content {
-		width: 40%;
+		width: 80%;
+
+		@include screen(small) {
+			width: fit-content;
+		}
+		@include screen(medium) {
+			width: 40%;
+		}
+
 		&-heading {
 			@include typography("heading lg");
 		}
 
 		&-paragraph {
 			@include typography("text lg");
-			margin-top: 24px; // the Mono doesn't allow margin-bottom
+			@include screen(medium) {
+				margin-top: 24px;
+			}
+			margin-top: 0;
 		}
 	}
+
 	&__btnWrapper {
 		&-btn {
 			border: 1px solid;
