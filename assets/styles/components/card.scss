@@ -1,0 +1,86 @@
+.card {
+  &__media {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 350px;
+    background: linear-gradient(360deg, rgb(0, 0, 0) 100%, #ffffff 100%);
+
+    &-image {
+      @extend .main-content-image;
+      width: 380px;
+      cursor: initial;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      position: relative;
+      cursor: initial;
+      opacity: 0.5;
+    }
+  }
+  &__body {
+    position: relative;
+  }
+
+  &__body-location {
+    position: absolute;
+    bottom: 45px;
+    align-items: center;
+    left: 10%;
+    color: $color-base-white;
+
+    &::before {
+      content: url(../icons/map-pin.svg);
+      margin-right: 0.5em;
+    }
+  }
+  &__body-label {
+    position: absolute;
+    bottom: 120px;
+    align-items: center;
+    left: 10%;
+    color: white;
+  }
+  &__body-title {
+    position: absolute;
+    bottom: 80px;
+    left: 10%;
+    color: $color-base-white;
+  }
+}
+.card__media .card__media-image {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  vertical-align: middle;
+}
+.card__media .card__media-image:hover {
+  -webkit-transform: scale(1.03); /* Safari and Chrome */
+  -moz-transform: scale(1.03); /* Firefox */
+  -ms-transform: scale(1.03); /* IE 9 */
+  -o-transform: scale(1.03); /* Opera */
+  transform: scale(1.03);
+  border-radius: 15px;
+}
+
+.card:nth-child(1) .card__body-label {
+  background-color: $color-secondary-400;
+  padding: 7px 10px;
+  color: $color-secondary-700;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.card:nth-child(2) .card__body-label {
+  background-color: $color-primary-100;
+  padding: 7px 10px;
+  color: $color-primary-700;
+  border-radius: 4px;
+}
+.card:nth-child(3) .card__body-label {
+  background-color: $color-neutrals-100;
+  padding: 7px 10px;
+  color: $color-neutrals-700;
+  border-radius: 4px;
+}
