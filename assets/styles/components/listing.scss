@@ -1,0 +1,137 @@
+.listing {
+
+
+    display: flex;
+    width: 100vw;
+    min-height: 29vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px 80px;
+
+
+
+
+    &__inner {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+    }
+
+
+
+    &__item {
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    &__media {
+        width: 389px;
+        height: 480px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        margin: 0;
+        border-radius: 8px;
+            
+        
+
+        &-image {
+            display: block;
+            min-width: 100%;
+            min-height: 100%;
+            transition: transform 0.3s;
+            
+        }
+        
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 48px 24px 24px;
+        gap: 12px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+
+
+        position: absolute;
+        height: 197px;
+        width: 100%;
+        border-radius: 8px;
+        bottom: 0px;
+        color: slot(page, background);
+
+
+
+        &-label {
+            @include typography('label sm');
+            color: $color-secondary-700;
+            background: $color-secondary-100;
+            padding: 4px;
+            border-radius: 4px;
+
+        }
+
+        &-label2 {
+            @include typography('label sm');
+            background: $color-primary-100 ;
+            color: $color-primary-700;
+            border-radius: 4px;
+            padding: 4px;
+
+        }
+
+        &-label3 {
+            @include typography('label sm');
+            color: $color-neutrals-700;
+            background: $color-neutrals-100;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        &-title {
+            @include typography('heading sm');
+
+        }
+
+    
+        &-location::before {
+            content: url("../icons/map-pin.svg");
+            display: inline-block;
+            vertical-align: middle; 
+            margin-right: 5px;
+            font-size: 1.2rem;
+          }
+        
+          &-location {
+            @include typography('label sm');
+            display: flex;
+            align-items: center;
+          }
+          
+        
+        
+
+    }
+
+    &:hover img  { 
+        transform : scale(1.25);
+       }
+}
