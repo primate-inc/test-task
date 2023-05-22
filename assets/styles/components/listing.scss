@@ -1,0 +1,21 @@
+.listing {
+	// @include responsive-grid();
+	a {
+		text-decoration: none;
+	}
+	&__inner {
+		display: flex;
+		flex-flow: row;
+		border: 1 solid black;
+		justify-content: space-evenly;
+		flex-grow: 1;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		display: flex;
+		flex-flow: column nowrap;
+		width: 100%;
+		max-width: 66ch;
+	}
+}
