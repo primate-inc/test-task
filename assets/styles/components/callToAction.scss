@@ -16,6 +16,7 @@
         &-paragraph {
             margin-top: 1.5em;
             @include typography('text lg');
+            color: token(color, neutrals, '900');
         }
     }
 
@@ -52,8 +53,9 @@
             content: "";
             display: inline-block;
             width: 8px;
-            height: 13.5px;
-            margin-left: 0.5rem;
+            height: 14px;
+            margin-left: 1rem;
+            line-height: 100%;
             background-image: url("/assets/icons/arrow.svg");
           }
         }
