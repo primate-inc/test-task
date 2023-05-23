@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1280px;
-  max-width: 90%;
+  width: 1440px;
+  max-width: 80%;
 
   &__title {
     color: $color-neutrals-900;
-    font-size: $sizes-xl-desktop;
-    font-weight: 900;
+    font-size: $sizes-md-desktop;
+    font-weight: 700;
   }
   &__subtitle {
     margin: 1em 0;
