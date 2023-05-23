@@ -1,0 +1,43 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  max-width: 80%;
+
+  &__title {
+    color: $color-neutrals-900;
+    font-size: $sizes-md-desktop;
+    font-weight: 700;
+  }
+  &__subtitle {
+    margin: 1em 0;
+    color: $color-neutrals-900;
+    line-height: 1.4;
+    font-size: $sizes-sm-desktop;
+  }
+  &__button {
+    display: inline-block;
+    margin-bottom: 5.5em;
+
+    padding: 10px 35px 10px 20px;
+    text-align: center;
+
+    background: none;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 8px;
+    color: $color-neutrals-700;
+    &::after {
+      content: url(../icons/arrow-left.svg);
+      margin-left: 0.3em;
+      margin-top: 0.1em;
+      position: absolute;
+      color: $color-neutrals-800;
+    }
+    &:hover {
+      color: $color-base-black;
+      border: 1px solid $color-base-black;
+    }
+  }
+}

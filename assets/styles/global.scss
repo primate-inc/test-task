@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
 
   background-color: slot(page, background);
@@ -40,8 +40,8 @@ body {
   width: 100%;
   margin: 0 auto;
 
-  @include responsive-slot('padding-top', page, spacing);
-  @include responsive-slot('padding-bottom', page, spacing);
+  @include responsive-slot("padding-top", page, spacing);
+  @include responsive-slot("padding-bottom", page, spacing);
 
   overflow: hidden;
 }
@@ -50,11 +50,15 @@ body {
   width: 100%;
   margin: 0 auto;
 
-  @include responsive-slot('margin-top', component, spacing);
-  @include responsive-slot('margin-bottom', component, spacing);
+  @include responsive-slot("margin-top", component, spacing);
+  @include responsive-slot("margin-bottom", component, spacing);
 
-  &:first-child { margin-top: 0; }
-  &:last-child { margin-bottom: 0; }
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .main-content-ol {

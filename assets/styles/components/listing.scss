@@ -1,0 +1,13 @@
+.listing__inner {
+  @extend .main-content-ol;
+  @extend .main-content-link;
+
+  max-width: $breakpoints-desktop;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1440px;
+  gap: 1em;
+  max-width: 80%;
+  margin: auto;
+}

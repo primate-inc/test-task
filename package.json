@@ -1,22 +1,22 @@
 {
-    "name": "test-task",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "clean": "rm -rf dist && rm -rf .parcel-cache",
-        "dev": "parcel index.html --no-cache --no-hmr",
-        "start": "run-s clean dev",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "@parcel/transformer-sass": "^2.8.3",
-        "@primate-inc/mono": "^0.2.0",
-        "npm-run-all": "^4.1.5",
-        "parcel": "^2.8.3",
-        "sass": "^1.62.1"
-    }
+  "name": "test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf .parcel-cache",
+    "dev": "parcel index.html --no-cache --no-hmr",
+    "start": "run-s clean dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "@primate-inc/mono": "^0.2.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.8.3",
+    "sass": "^1.62.1"
+  }
 }
