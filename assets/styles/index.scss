@@ -6,4 +6,184 @@
 
 @import "components/info-box.scss";
 
+.component.listing {
+    padding: 0 100px;
+}
 
+.call__to__action-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.call__to__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+    font-size: 1.2em;
+}
+
+.call__to__action-intro {
+    margin-left: 10px;
+    padding-bottom: 3.5em;
+}
+
+.call__to__action-intro p {
+    font-size: 1.3em;
+  }
+
+.call__to__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+
+.call__to__action-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid rgb(183, 179, 179);
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.call__to__action-button span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.call__to__action-button::after {
+    content: '';
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-right: 0.1em solid black;
+    border-top: 0.1em solid black;
+    transform: rotate(45deg);
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+
+.listing__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.listing__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.listing__item {
+    flex: 0 0 calc((100% - 40px) / 3);
+    margin: 0 10px 100px;
+    ;
+    max-width: 400px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative
+}
+
+.card__media {
+    width: 400px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.card__media::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    mix-blend-mode: multiply;
+}
+
+.card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform-origin: bottom center;
+    overflow: hidden;
+}
+
+.card__media:hover img {
+    transform: scale(1.07);
+}
+
+.card__body {
+    position: absolute;
+    bottom: 25px;
+    margin-left: 10px;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+}
+
+.card__body-label {
+    margin: 0;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.card__body-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 16px;
+}
+
+.card__body-location {
+    font-weight: bold;
+    color: white;
+}
+
+.card__body-label {
+    background-color: var(--label-color, white);
+    padding: 6px;
+}
+
+.card__body-label.adventure {
+    --label-color: rgb(228, 202, 241);
+    color: rgba(81, 7, 141, 0.932)
+}
+
+.card__body-label.luxury {
+    --label-color: lightblue;
+    color: rgb(47, 47, 189)
+}
+
+.card__body-label.romantic {
+    --label-color: white;
+    color: rgb(34, 33, 33);
+}
+
+.pin-icon {
+    height: 20px;
+    margin-right: 4px;
+}
