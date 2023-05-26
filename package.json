@@ -3,10 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "scripts": {
-        "clean": "rm -rf dist && rm -rf .parcel-cache",
+    "scripts": {        
         "dev": "parcel index.html --no-cache --no-hmr",
-        "start": "run-s clean dev",
+        "start": "run-s dev",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
