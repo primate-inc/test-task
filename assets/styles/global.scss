@@ -80,3 +80,75 @@ body {
   height: auto;
   margin-bottom: 1.5em;
 }
+
+.intro-body-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: large;
+}
+
+a.button {
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+a.button:hover {
+  border: 1px solid #a6a6b0;
+}
+
+a.button:active {
+  border: 1px solid #797983;
+}
+
+a.button:focus ~ .card1 {
+  display: block;
+}
+
+.card1{
+  display: none;
+  width: 390px;
+  height: 480px;
+  border-radius: 8px;
+}
+
+#pleasework {
+  display: none;
+}
+
+.card__media-image:hover {
+  transform: scale(1.1);
+}
+
+.card__body-label.adventure {
+  background-color: #ebe9fe;
+  color: #783aee;
+}
+
+.card__body-label.luxury {
+  background-color: #b2ddff;
+  color: #1671ee;
+}
+
+.card__body-label.romantic {
+  background-color: #f4f4f4;
+  color: #51525c;
+}
+
+.card__body-label.sunny {
+  background-color: #fef1c8;
+  color: #dd6a02;
+}
+
+.pin {
+  vertical-align: text-bottom;
+}
+
