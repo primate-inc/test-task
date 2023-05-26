@@ -1,0 +1,83 @@
+.listing__inner {
+    border: 1px solid #cbc8c8;
+    flex-flow: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 0px 50px 50px 50px;
+  }
+  
+  .listing__item {
+    width: 100%;
+    max-width: 66ch;
+    flex-flow: column;
+    display: flex;
+  }
+  
+  .card {
+    display: relative;
+    width: 389px;
+    height: 480px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card__media {
+    text-align: center;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform .2s;
+  }
+  
+  .card__body {
+    width: 389px;
+    background: linear-gradient(to top, #000, #0000);
+    flex-direction: column;
+    padding: 340px 0px 24px 24px;  
+    border-radius: 8px;
+    display: flex;
+    position: absolute;
+  }
+  
+  .card__body-label {
+    color: #040ec2;  
+    width: fit-content;
+    background-color: #ece9fe;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-style: bold;
+    font-size: 12px;
+  }
+  
+  .card__body-title {
+    color: #fff;
+    margin: 12px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  
+  .fas {
+    font-size:12px;
+    padding-right: 4px;
+  }
+  
+  .card__body-location {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .card:nth-child(2) .card__body-label {
+    color: #175cd3;
+    background-color: #d1e9ff;
+  }
+  
+  .card:nth-child(3) .card__body-label {
+    color: #3f3f46;
+    background-color: #f4f4f4;
+  }
+  
+  .card:hover .card__media {
+    transform: scale(1.1);
+  }
+  
