@@ -1,6 +1,6 @@
 .info-box {
   @include responsive-grid();
-
+  
   &__inner {
     grid-column: slot(grid, wide);
   }

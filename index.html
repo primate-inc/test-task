@@ -43,11 +43,23 @@
               <br/>
               <strong class='main-content-strong'>Good luck and have fun!</strong>
             </p>
+            <br/>
+            <p><strong class='main-content-strong'>Hi! I wasn't sure if I should leave the instructions on the page or not so I have just left everything in just in case. Thank you for looking at my work, hope it was what you expected!</strong></p>
           </div>
         </div>
       </div>
 
       <div class="component listing">
+        <div class="listing__intro"> 
+          <div class="listing__intro-body">
+            <p class="intro-body-title">New Destinations<p>
+            <p class="intro-body-paragraph">So what are you waiting for? Start exploring our site today and get ready for the adventure of a lifetime!</p>
+          </div>
+          <div class="listing__intro-button">
+            <a tabindex="0" class="button" onclick="revealCards()">See All <font size="+1"> ᐳ</font></a>
+          </div>
+        </div>
+
         <div class="listing__inner">
 
           <a href="#" class="listing__item card">
@@ -56,9 +68,11 @@
             </div>
 
             <div class="card__body">
-              <div class="card__body-label">Adventure</div>
+              <div class="card__body-label adventure">Adventure</div>
               <div class="card__body-title">Breathtaking views  with our adventure tours</div>
-              <div class="card__body-location">Norway</div>
+              <div class="card__body-location">
+                <img src="assets/icons/map-pin.svg" > Norway
+              </div>
             </div>
           </a>
 
@@ -68,9 +82,11 @@
             </div>
 
             <div class="card__body">
-              <div class="card__body-label">Luxury</div>
+              <div class="card__body-label luxury">Luxury</div>
               <div class="card__body-title">Luxury Retreats in Europes  most beautiful cities</div>
-              <div class="card__body-location">Italy</div>
+              <div class="card__body-location">
+                <img class="pin" src="assets/icons/map-pin.svg" > Italy
+              </div>
             </div>
           </a>
 
@@ -80,14 +96,37 @@
             </div>
 
             <div class="card__body">
-              <div class="card__body-label">Romantic</div>
+              <div class="card__body-label romantic">Romantic</div>
               <div class="card__body-title">Romantic Escapes that you will never forget</div>
-              <div class="card__body-location">Greece</div>
+              <div class="card__body-location">
+                <img class="pin" src="assets/icons/map-pin.svg" > Greece
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="listing__item card" id="SeeAll">
+            <div class="card__media">
+              <img class="card__media-image" src="https://source.unsplash.com/random/600x600/?nice" alt="Placeholder image" />
+            </div>
+
+            <div class="card__body">
+              <div class="card__body-label sunny">Sunny</div>
+              <div class="card__body-title">Sunny destination for the ultimate holiday</div>
+              <div class="card__body-location">
+                <img class="pin" src="assets/icons/map-pin.svg" > French Riviera
+              </div>
             </div>
           </a>
 
         </div>
       </div>
+
+      <script>
+        function revealCards() {
+          document.getElementById("SeeAll").style.display = "block";
+          document.getElementById("SeeAll").scrollIntoView();
+        }
+        </script>
 
     </main>
   </body>

@@ -1,0 +1,56 @@
+.listing {
+  width: 100%;
+  padding: calc(8px + 1.5625vw);
+  margin: 0 auto;
+  min-width: 0;
+  min-height: 0;
+
+  &__intro {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 85%;
+    margin: auto;
+    justify-content: center;
+    align-items:center;
+
+    &-body {
+      align-items: left;
+      flex: 0 0 500px;
+    }
+
+    &-body-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    &-button {
+      padding: 16px 0px;
+    margin-left: auto;
+    text-align: right;
+    align-self: flex-start;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &__item {
+    position: relative;
+
+    &-intro {
+      @include typography('text xl');
+      margin-bottom: 1.5em;
+    }
+    &-paragraph {
+      @include typography('text md');
+    }
+  }
+
+  
+}
