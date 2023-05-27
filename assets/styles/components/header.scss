@@ -1,0 +1,48 @@
+.header-container {
+    display: flex;
+    padding: 2rem;
+
+    .header-text {
+        flex-basis: 50%;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        p {
+            width: 50%;
+            margin-top: .8rem;
+            line-height: 1.5;
+        }
+    }
+
+    .header-cta {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: start;
+        a {
+            padding: .5rem 1rem;
+            border: 1px solid #666;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #000;
+            display: inline-block;
+            font-weight: 800;
+        }
+    }
+}
+
+@media(max-width: 998px){
+    .header-container{
+        display: block;
+
+        .header-cta{
+            display: block;
+            margin-top: 2rem;
+        }
+    }
+
+
+}
