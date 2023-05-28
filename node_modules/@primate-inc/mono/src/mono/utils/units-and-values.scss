@@ -1,0 +1,80 @@
+@use 'sass:math';
+
+@function is-not-rem($value) {
+  @return is-number($value) and index('cm' 'mm' 'in' 'px' 'pt' 'pc', unit($value)) != null;
+}
+
+// Remove the unit of a length
+// @param {Number} $number - Number to remove unit from
+// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// Change px to em
+// @param {Number} $value - Value in px or unitless
+// @return {Number} - Value in em
+@function em($value) {
+  $base_font: config('typography', 'baseFontSize');
+  $pixels: strip-unit($value);
+  $output: math.div($pixels, $base_font);
+  @return $output * 1em;
+}
+
+// Number to rem
+// @param {Number} $value - Value in px or unitless
+// @return {Number} - Value in rem
+@function rem($value) {
+  $base_font: config('typography', 'baseFontSize');
+  $pixels: strip-unit($value);
+  $output: math.div($pixels, $base_font);
+  @return $output * 1rem;
+}
+
+// Change px to rem
+@function px-to-rem($value) {
+  $unit: false;
+
+  @if type-of($value) == 'number' {
+    $unit: unit($value);
+  }
+
+  @if ($unit == 'rem') {
+    @return $value;
+  } @else if ($unit == 'px' or $unit == '') {
+    @return rem($value);
+  } @else {
+    @return false;
+  }
+}
+
+// Returns 0 if $value is negative
+@function not-less-than-zero($value) {
+  @return if(strip-unit($value) < 0, 0, $value);
+}
+
+// Return $min if $value is lower
+@function not-less-than($value, $min: 0) {
+  @return if(strip-unit($value) < strip-unit($min), $min, $value);
+}
+
+// toFixed() function in Sass
+// @param {Number} $float - Number to format
+// @param {Number} $digits [2] - Number of digits to leave
+// @return {Number}
+@function to-fixed($float, $digits: 2) {
+  $sass-precision: 5;
+  
+  @if $digits > $sass-precision {
+    @warn "Sass sets default precision to #{$sass-precision} digits, and there is no way to change that for now."
+    + "The returned number will have #{$sass-precision} digits, even if you asked for `#{$digits}`."
+    + "See https://github.com/sass/sass/issues/1122 for further informations.";
+  }
+  
+  $pow: math.pow(10, $digits);
+  @return math.div(math.round($float * $pow), $pow);
+}

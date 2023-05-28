@@ -1,0 +1,72 @@
+$configs: (
+  typography: (
+    // Define base font size
+    // This is used for px to rem calculations
+    //
+    // Value: number
+    baseFontSize: 16, 
+    // Define font fallbacks
+    //
+    // Key: quoted string, should match fontFamily name as defined in tokens.scss
+    // Value: quoted string of valid css font-family
+    fontFallbacks: ( 
+      'Lato': 'Arial, Verdana, sans-serif',
+      'Sofia Sans': 'Times New Roman, serif',
+    ),
+    // Fluid typography config
+    //
+    // Used to apply fluid typography to font styles
+    fluid: ( 
+      // Default range
+      //
+      // Defines start and end breakpoints for fluid typography
+      // Value should be a valid breakpoint key
+      range: ( 
+        start: mobile,
+        end: desktop,
+      ),
+      // Default styles
+      //
+      // Defines start and end styles for fluid typography
+      // Value should be a valid font style key
+      styles: (
+        start: default,
+        end: desktop
+      ),
+      // Apply fluid typography to font styles
+      //
+      // Key: should be a quoted string of valid font style name
+      // Value: boolean | map
+      tags: (
+        // Activates fluid typography using default values
+        'heading-2xl': true,
+        // Activates fluid typography using custom range and styles from tokens.scss
+        'heading-xl': (
+          range: (
+            end: tablet
+          ),
+          styles: (
+            end: tablet
+          )
+        ),
+        // Activates fluid typography using custom styles map
+        // Supported attributes: font-size, line-height, letter-spacing
+        'heading-lg': (
+          styles: (
+            end: (
+              font-size: 3rem,
+              line-height: 6rem,
+              letter-spacing: .25rem
+            )
+          ),
+        ),
+      )
+    ),
+  ),
+  // layout: (
+  //   customBreakpoints: (
+  //     custom: 2000px
+  //   ),
+  // )
+);
+
