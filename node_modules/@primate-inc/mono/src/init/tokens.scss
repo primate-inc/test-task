@@ -1,0 +1,219 @@
+
+/**
+ * Do not edit directly
+ * Generated on Fri, 25 Nov 2022 12:10:51 GMT
+ */
+
+$sizes-xs-desktop: 1rem !default;
+$sizes-xs-default: 0.5rem !default;
+$sizes-sm-desktop: 2rem !default;
+$sizes-sm-default: 1.5rem !default;
+$sizes-md-desktop: 3.5rem !default;
+$sizes-md-default: 3rem !default;
+$sizes-lg-desktop: 5rem !default;
+$sizes-lg-default: 4rem !default;
+$sizes-xl-desktop: 8rem !default;
+$sizes-xl-default: 6rem !default;
+$sizes-grid-main-desktop: 85rem !default;
+$sizes-grid-main-tablet: 45.5rem !default;
+$sizes-grid-main-default: 23.4375rem !default;
+$breakpoints-desktop: 90rem !default;
+$breakpoints-tablet: 48rem !default;
+$breakpoints-tablet-wide: 64rem !default;
+$breakpoints-mobile: 23.4375rem !default;
+$radius-custom-desktop: ("smoothing": 0, "topLeft": 48, "topRight": 16, "bottomLeft": 16, "bottomRight": 48) !default;
+$radius-custom-default: ("smoothing": 0, "topLeft": 32, "topRight": 12, "bottomLeft": 12, "bottomRight": 32) !default;
+$radius-lg-default: ("smoothing": 0, "topLeft": 20, "topRight": 20, "bottomLeft": 20, "bottomRight": 20) !default;
+$radius-lg-desktop: ("smoothing": 0, "topLeft": 24, "topRight": 24, "bottomLeft": 24, "bottomRight": 24) !default;
+$radius-ms-desktop: ("smoothing": 0, "topLeft": 16, "topRight": 16, "bottomLeft": 16, "bottomRight": 16) !default;
+$radius-md-default: ("smoothing": 0, "topLeft": 12, "topRight": 12, "bottomLeft": 12, "bottomRight": 12) !default;
+$radius-sm-desktop: ("smoothing": 0, "topLeft": 8, "topRight": 8, "bottomLeft": 8, "bottomRight": 8) !default;
+$radius-sm-default: ("smoothing": 0, "topLeft": 6, "topRight": 6, "bottomLeft": 6, "bottomRight": 6) !default;
+$radius-xs-default: ("smoothing": 0, "topLeft": 3, "topRight": 3, "bottomLeft": 3, "bottomRight": 3) !default;
+$radius-xs-desktop: ("smoothing": 0, "topLeft": 4, "topRight": 4, "bottomLeft": 4, "bottomRight": 4) !default;
+$color-blue: hsla(240,100%,47%,1.0) !default;
+$color-black: hsla(0,0%,0%,1.0) !default;
+$color-white: hsla(0,0%,100%,1.0) !default;
+$color-grey-300: hsla(0,0%,83%,1.0) !default;
+$color-grey-500: hsla(0,0%,66%,1.0) !default;
+$grid-main-desktop: ("pattern": columns, "gutterSize": 20, "alignment": stretch, "count": 12, "offset": 32) !default;
+$grid-main-tablet: ("pattern": columns, "gutterSize": 20, "alignment": stretch, "count": 6, "offset": 16) !default;
+$grid-main-default: ("pattern": columns, "gutterSize": 20, "alignment": stretch, "count": 4, "offset": 8) !default;
+$font-heading-2xl-default: ("fontSize": 80, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -2.4, "lineHeight": 73.6, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-2xl-tablet: ("fontSize": 110, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -3.3, "lineHeight": 101.2, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-2xl-desktop: ("fontSize": 170, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -5.1, "lineHeight": 156.4, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-xl-default: ("fontSize": 50, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -1, "lineHeight": 47.5, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-xl-tablet: ("fontSize": 60, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -1.2, "lineHeight": 57, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-xl-desktop: ("fontSize": 78, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -1.56, "lineHeight": 74.1, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-lg-default: ("fontSize": 18, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 25.2, "paragraphIndent": 0, "paragraphSpacing": 8, "textCase": none) !default;
+$font-heading-lg-tablet: ("fontSize": 19, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 26.6, "paragraphIndent": 0, "paragraphSpacing": 8, "textCase": none) !default;
+$font-heading-lg-desktop: ("fontSize": 20, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 28, "paragraphIndent": 0, "paragraphSpacing": 8, "textCase": none) !default;
+$font-text-lg-default: ("fontSize": 20, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 28, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-text-lg-tablet: ("fontSize": 21, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 29.4, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-text-lg-tablet-wide: ("fontSize": 22, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 30.8, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-text-lg-desktop: ("fontSize": 24, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 33.6, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-text-md-default: ("fontSize": 18, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 25.2, "paragraphIndent": 0, "paragraphSpacing": 8, "textCase": none) !default;
+$font-text-md-tablet: ("fontSize": 19, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 26.6, "paragraphIndent": 0, "paragraphSpacing": 12, "textCase": none) !default;
+$font-text-md-desktop: ("fontSize": 20, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 28, "paragraphIndent": 0, "paragraphSpacing": 8, "textCase": none) !default;
+$font-text-sm-default: ("fontSize": 16, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 24, "paragraphIndent": 0, "paragraphSpacing": 14, "textCase": none) !default;
+$font-text-sm-desktop: ("fontSize": 18, "textDecoration": none, "fontFamily": Noto Sans, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 27, "paragraphIndent": 0, "paragraphSpacing": 14, "textCase": none) !default;
+$font-links-desktop: ("fontSize": 20, "textDecoration": underline, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 28, "paragraphIndent": 0, "paragraphSpacing": 8, "textCase": none) !default;
+$font-links-tablet: ("fontSize": 19, "textDecoration": underline, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 26.6, "paragraphIndent": 0, "paragraphSpacing": 8, "textCase": none) !default;
+$font-links-default: ("fontSize": 18, "textDecoration": underline, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 25.2, "paragraphIndent": 0, "paragraphSpacing": 8, "textCase": none) !default;
+$font-quote-default: ("fontSize": 52, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -1.04, "lineHeight": 49.4, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-quote-tablet: ("fontSize": 68, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -1.36, "lineHeight": 64.6, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-quote-desktop: ("fontSize": 78, "textDecoration": none, "fontFamily": ITC Garamond Std, "fontWeight": 300, "fontStyle": normal, "fontStretch": normal, "letterSpacing": -1.56, "lineHeight": 74.1, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-subtitle-md-tablet: ("fontSize": 30, "textDecoration": none, "fontFamily": Modern DOS 8x16, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 33, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-subtitle-md-default: ("fontSize": 26, "textDecoration": none, "fontFamily": Modern DOS 8x16, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 28.6, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-md-desktop: ("fontSize": 19, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 26.6, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-md-default: ("fontSize": 18, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 25.2, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-sm-desktop: ("fontSize": 18, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 25.2, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-sm-default: ("fontSize": 17, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 23.8, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-xs-desktop: ("fontSize": 16, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 24, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-heading-xs-default: ("fontSize": 16, "textDecoration": none, "fontFamily": Neue Haas Grotesk Text Pro, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 24, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$effect-shadow-xl-0: ("shadowType": dropShadow, "radius": 8, "color": #18181b08, "offsetX": 0, "offsetY": 8, "spread": -4) !default;
+$effect-shadow-xl-1: ("shadowType": dropShadow, "radius": 24, "color": #18181b14, "offsetX": 0, "offsetY": 20, "spread": -4) !default;
+
+$tokens: (
+  'sizes': (
+    'xs': (
+      'desktop': $sizes-xs-desktop,
+      'default': $sizes-xs-default
+    ),
+    'sm': (
+      'desktop': $sizes-sm-desktop,
+      'default': $sizes-sm-default
+    ),
+    'md': (
+      'desktop': $sizes-md-desktop,
+      'default': $sizes-md-default
+    ),
+    'lg': (
+      'desktop': $sizes-lg-desktop,
+      'default': $sizes-lg-default
+    ),
+    'xl': (
+      'desktop': $sizes-xl-desktop,
+      'default': $sizes-xl-default
+    ),
+    // 'grid': (
+    //   'main': (
+    //     'desktop': $sizes-grid-main-desktop,
+    //     'tablet': $sizes-grid-main-tablet,
+    //     'default': $sizes-grid-main-default
+    //   )
+    // )
+  ),
+  'breakpoints': (
+    'desktop': $breakpoints-desktop,
+    'tablet': $breakpoints-tablet,
+    'tablet-wide': $breakpoints-tablet-wide,
+    'mobile': $breakpoints-mobile
+  ),
+  'radius': (
+    'custom': (
+      'desktop': $radius-custom-desktop,
+      'default': $radius-custom-default
+    ),
+    'lg': (
+      'default': $radius-lg-default,
+      'desktop': $radius-lg-desktop
+    ),
+    'ms': (
+      'desktop': $radius-ms-desktop
+    ),
+    'md': (
+      'default': $radius-md-default
+    ),
+    'sm': (
+      'desktop': $radius-sm-desktop,
+      'default': $radius-sm-default
+    ),
+    'xs': (
+      'default': $radius-xs-default,
+      'desktop': $radius-xs-desktop
+    )
+  ),
+  'color': (
+    'blue': $color-blue,
+    'black': $color-black,
+    'white': $color-white,
+    'grey': (
+      '300*': $color-grey-300,
+      '500': $color-grey-500
+    )
+  ),
+  'grid': (
+    'main': (
+      'desktop': $grid-main-desktop,
+      'tablet': $grid-main-tablet,
+      'default': $grid-main-default
+    )
+  ),
+  'font': (
+    'heading 2xl': (
+      'default': $font-heading-2xl-default,
+      'tablet': $font-heading-2xl-tablet,
+      'desktop': $font-heading-2xl-desktop
+    ),
+    'heading xl': (
+      'default': $font-heading-xl-default,
+      'tablet': $font-heading-xl-tablet,
+      'desktop': $font-heading-xl-desktop
+    ),
+    'heading lg': (
+      'default': $font-heading-lg-default,
+      'tablet': $font-heading-lg-tablet,
+      'desktop': $font-heading-lg-desktop
+    ),
+    'text lg': (
+      'default': $font-text-lg-default,
+      'tablet': $font-text-lg-tablet,
+      'tablet-wide': $font-text-lg-tablet-wide,
+      'desktop': $font-text-lg-desktop
+    ),
+    'text md': (
+      'default': $font-text-md-default,
+      'tablet': $font-text-md-tablet,
+      'desktop': $font-text-md-desktop
+    ),
+    'text sm': (
+      'default': $font-text-sm-default,
+      'desktop': $font-text-sm-desktop
+    ),
+    'links': (
+      'desktop': $font-links-desktop,
+      'tablet': $font-links-tablet,
+      'default': $font-links-default
+    ),
+    'quote': (
+      'default': $font-quote-default,
+      'tablet': $font-quote-tablet,
+      'desktop': $font-quote-desktop
+    ),
+    'subtitle md': (
+      'tablet': $font-subtitle-md-tablet,
+      'default': $font-subtitle-md-default
+    ),
+    'heading md': (
+      'desktop': $font-heading-md-desktop,
+      'default': $font-heading-md-default
+    ),
+    'heading sm': (
+      'desktop': $font-heading-sm-desktop,
+      'default': $font-heading-sm-default
+    ),
+    'heading xs': (
+      'desktop': $font-heading-xs-desktop,
+      'default': $font-heading-xs-default
+    )
+  ),
+  'effect': (
+    'shadow': (
+      'xl': (
+        '0': $effect-shadow-xl-0,
+        '1': $effect-shadow-xl-1
+      )
+    )
+  )
+);

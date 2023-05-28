@@ -1,0 +1,183 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-size: 16px;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main {
+  width: 100%;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  overflow: hidden;
+}
+
+@media only screen and (width >= 90rem) {
+  .main {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.component {
+  width: 100%;
+  margin: 1.25rem auto;
+}
+
+@media only screen and (width >= 90rem) {
+  .component {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.component:first-child {
+  margin-top: 0;
+}
+
+.component:last-child {
+  margin-bottom: 0;
+}
+
+.main-content-ol {
+  margin-bottom: 1.5em;
+  list-style: decimal inside;
+}
+
+.main-content-ol li {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.main-content-link {
+  color: #1570ef;
+}
+
+.main-content-strong {
+  font-weight: bold;
+}
+
+.main-content-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5em;
+  display: block;
+}
+
+.info-box {
+  grid-template-columns: minmax(0, calc(50% - 41.25rem)) .625rem 1fr 1.25rem 1fr 1.25rem 1fr 1.25rem 1fr .625rem minmax(0, calc(50% - 41.25rem));
+  display: grid;
+}
+
+@media only screen and (width >= 48rem) {
+  .info-box {
+    grid-template-columns: minmax(0, calc(50% - 41.25rem)) 1.25rem 1fr 1.25rem 1fr 1.25rem 1fr 1.25rem 1fr 1.25rem 1fr 1.25rem 1fr 1.25rem minmax(0, calc(50% - 41.25rem));
+    display: grid;
+  }
+}
+
+@media only screen and (width >= 90rem) {
+  .info-box {
+    grid-template-columns: minmax(0, calc(50% - 41.5rem)) 2rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 2rem minmax(0, calc(50% - 41.5rem));
+    display: grid;
+  }
+}
+
+.info-box__inner {
+  grid-column: 3 / -3;
+}
+
+.info-box__content {
+  width: 100%;
+  max-width: 66ch;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.info-box__content-intro {
+  letter-spacing: 0;
+  text-indent: 0;
+  text-transform: none;
+  margin-bottom: 1.5em;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 1.875rem;
+  text-decoration: none;
+}
+
+@media only screen and (width >= 90rem) {
+  .info-box__content-intro {
+    letter-spacing: 0;
+    text-indent: 0;
+    text-transform: none;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    line-height: 2rem;
+    text-decoration: none;
+  }
+}
+
+.info-box__content-paragraph {
+  letter-spacing: 0;
+  text-indent: 0;
+  text-transform: none;
+  font-family: Plus Jakarta Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+@media only screen and (width >= 90rem) {
+  .info-box__content-paragraph {
+    letter-spacing: .32px;
+    text-indent: 0;
+    text-transform: none;
+    font-family: Plus Jakarta Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6rem;
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=index.e378193d.css.map */

@@ -1,0 +1,4 @@
+// Paint border around element using box-shadow to prevent resizing & shifting
+@mixin debug($color: pink) {
+  box-shadow: 0 0 0 1px $color;
+}
