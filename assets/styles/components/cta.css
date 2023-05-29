@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+.home{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  background-size:cover;
+  background-position: center;
+  border-radius: 12px;
+  width: 100%;
+  z-index: 0;
+  
+}
+
+.image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.home .content {
+  text-align: center;
+}
+
+.home .content{
+  text-align: center;
+}
+
+.home .content h3{
+  font-weight: 400;
+  font-size: 100px;
+  margin-top: 100px;
+  font-family: 'Vidaloka', serif;
+  color: rgb(255, 255, 255); 
+}
+
+.home .content p{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
+  color: rgb(255, 255, 255); 
+}
+
+.home .content .media img{
+  position: relative;
+  width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 150px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .cta-button:hover {
+    background-color: #FF3333;
+  }
+
+  .home .p2{
+    margin-top: 130px;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(250, 251, 252); 
+  }
+
+  .home .p3{
+    margin-top: 10px;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(250, 251, 252); 
+  }
+
+  
