@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+  .home .content .btn1 {
+    position: absolute ;
+    top: 25px;
+    left: 70%;
+    cursor: pointer;
+    gap: 40px;
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(255, 255, 255); 
+    text-decoration: none !important;
+  }
+  .home .content .btn2 {
+    position: absolute ;
+    top: 25px;
+    left: 77%;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(255, 255, 255); 
+    text-decoration: none !important;
+  }
+  .home .content .btn3 {
+    position: absolute ;
+    top: 25px;
+    left: 85%;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+   
+   
+    text-decoration: none !important;
+  }
+.home .content .btn1,
+.home .content .btn2,
+.home .content .btn3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+  
+  
