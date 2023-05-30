@@ -31,3 +31,13 @@ Examples of how to use this package can be found within this project. For more i
 
 Feel free to reach out if you have any questions or need assistance during the test task. Good luck!
 
+### NOTES
+
+1 - address feedback notes:
+
+1a - address box heights - look into margin top and bottom / see if possible to overlay figma image or screenshot and match this
+1b - address CTA feedback comments
+
+2 - try and refactor code to use mixin / mono package
+3 - add an extra breakpoint for Ipad
+
