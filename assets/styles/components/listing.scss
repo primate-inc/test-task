@@ -3,19 +3,14 @@
 
   &__inner {
     grid-column: slot(grid, wide);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24.4px;
+    padding: 0px 0px 80px;
 
     @include screen(tablet) {
-      flex-flow: row wrap;
+      padding: 0px 0px 80px;
     }
-
-    grid-column: slot(grid, wide);
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 80px;
-    gap: 24.33px;
-
   }
 
   &__item {
@@ -24,8 +19,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 480px;
-    width: 389px;
-    padding: 0;
+    min-width: 370px;
+    flex: 1;
   }
 }
 
@@ -41,7 +36,7 @@
 
     &-image {
       height: 480px;
-      width: 389px;
+      width: 100%;
       transition: .3s ease-in-out;
 
       &:hover {

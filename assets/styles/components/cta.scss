@@ -8,13 +8,25 @@
   &__content {
     display: flex;
     flex-flow: column nowrap;
-    padding: 80px 0px;
+    padding: 80px 30px;
     gap: 24px;
+
+    @include screen(tablet) {
+      padding: 80px 0px;
+    }
 
     &-intro {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      @include screen(tablet) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
 
       &-heading {
         @include screen(desktop) {
@@ -49,14 +61,16 @@
     }
 
     &-paragraph {
-      @include screen(desktop) {
+      @include screen(tablet) {
         @include typography('text lg');
+        text-align: left;
+        width: 532px;
+        height: 58px;
       }
 
       @include typography('text lg');
       color: token(color, neutrals, '900');
-      width: 532px;
-      height: 58px;
+      text-align: center;
     }
   }
 }
