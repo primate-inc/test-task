@@ -37,7 +37,7 @@
       position: sticky;
       bottom: -2%;
       padding: 20px;
-      background-color: rgb(0, 0, 0, 0.2);
+      background-image: linear-gradient(transparent, black);
 
     }
 
@@ -90,7 +90,7 @@
   @media(min-width: 1024px) {
 
     & {
-      width: 33%;
+      width: 35%;
       overflow: hidden;
       border-radius: 10px;
       color: white;
@@ -131,7 +131,8 @@
       padding: 7px 18px 7px 18px;
       border-radius: 8px;
       display: inline-block;
-      margin-bottom: 15px
+      margin-bottom: 15px;
+      margin-left: 20px;
     }
 
     &__body-label-2 {
@@ -141,7 +142,8 @@
       padding: 7px 18px 7px 18px;
       border-radius: 8px;
       display: inline-block;
-      margin-bottom: 15px
+      margin-bottom: 15px;
+      margin-left: 20px;
     }
 
     &__body-label-3 {
@@ -151,19 +153,23 @@
       padding: 7px 18px 7px 18px;
       border-radius: 8px;
       display: inline-block;
-      margin-bottom: 15px
+      margin-bottom: 15px;
+      margin-left: 20px;
     }
 
     &__body-title {
-      @include typography('heading md');
+      @include typography('heading sm');
+      font-size: 27 !important;
       margin-top: 20px;
       text-shadow: rgb(0, 0, 0) 1 0 7px;
+      margin-left: 20px;
     }
 
     &__body-location {
       @include typography('text md');
       margin-top: 15px;
       text-shadow: rgb(0, 0, 0) 1px 0 7px;
+      margin-left: 20px;
     }
 
   }

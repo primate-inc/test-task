@@ -31,16 +31,17 @@
       height: 100vh;
       display: flex;
       flex-flow: row wrap;
-      align-items: center;
+      // align-items: center;
     }
 
     &__inner {
       display: flex;
-      justify-content: center;
-      gap: 40px;
-      width: 85%;
+      justify-content: space-around;
+      gap: 20px;
+      width: 75%;
       margin: auto;
-      height: 65%;
+      margin-bottom: 100px;
+      height: 58%;
 
     }
 
