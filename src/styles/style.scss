@@ -8,25 +8,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
-@import "/node_modules/bootstrap/scss/bootstrap.scss";
-
-
 
 .heading__area {
     margin-bottom: 60px;
+    display: grid;
+    grid-template-rows: auto;
+    margin: auto;
     @include responsive-slot('margin-bottom', component, spacing);
+    width: 90%;
+
+    @media (min-width: $breakpoints-desktop) {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr); // Assuming a 2-column grid
+        grid-template-areas:"wide wide wide";
+        justify-items: end;
+    }
+    @media (min-width: $breakpoints-tablet) {
+        grid-template-columns: repeat(2, 1fr); // Assuming a 2-column grid
+        grid-template-areas:"wide wide wide";
+        justify-items: end;
+    }
+    .title_card{        
+        @include responsive-slot('margin-bottom', component, spacing);
+    }
     h3{
-        @include typography('heading lg');
-        margin-bottom: 1em;        
-        @include media-breakpoint-down(md) {
-            @include typography('heading sm');
+        @include typography('heading sm');
+        margin-bottom: 1em;    
+        @media (min-width: $breakpoints-desktop) {
+            @include typography('heading lg');  
+        }    
+        @media (min-width: $breakpoints-tablet) {
+            @include typography('heading md');  
         }
     }
     .desc__box{
-        @include typography('text lg');       
-        @include media-breakpoint-down(md) {
-            @include typography('text sm');
-        }
+        @include typography('text sm');       
+        @media (min-width: $breakpoints-tablet) {
+            @include typography('text md');  
+        }         
+        @media (min-width: $breakpoints-desktop) {
+            @include typography('text lg');  
+        }  
     }
 }
 
@@ -41,16 +63,34 @@
     &:hover{
         color: #3F3F46;
     }
+    @include typography('label sm');       
+    @media (min-width: $breakpoints-tablet) {
+        @include typography('label md');  
+    } 
     .fa-angle-right{
         color: #26272B;
         display: inline-block;
         margin-left: 14px;
     }     
-    @include media-breakpoint-down(md) {
-        @include typography('label sm');
-    }
 }
 
+.listing__inner{
+    display: grid;        
+    margin: auto;
+    width: 90%;   
+    @media (min-width: $breakpoints-desktop) {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr); // Equal-width columns
+        grid-column-gap: 15px; // Adjust the gap between columns 
+    }  
+    @media (min-width: $breakpoints-tablet) {
+        grid-template-columns: repeat(3, 1fr); // Equal-width columns
+        grid-column-gap: 15px; // Adjust the gap between columns 
+    }
+}
+.box_1, .box_2, .box_3{    
+    @include responsive-slot('margin-bottom', component, spacing); 
+}
 .card{
     border: 0 !important;
     position: relative;
@@ -65,10 +105,10 @@
     .card__media{
         overflow: hidden;
         font-family:'Plus Jakarta Sans', sans-serif;
-        height: 480px;
+        height: 300px;
         border-radius: 8px;
-        @include media-breakpoint-down(md) {
-            height: 300px;
+        @media (min-width: $breakpoints-tablet) {
+            height: 480px;
         }
         img{
             width: 100%;
@@ -86,15 +126,19 @@
         bottom: 0;
         padding: 50px 24px 30px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        border-radius: 8px;
     }
     .card__body-title,.card__body-location{
         color: slot(page, boxTitleColor);
     }
     .card__body-title{        
         @include typography('heading sm');  
-        margin-bottom: 16px;               
-        @include media-breakpoint-down(md) {
-            @include typography('heading sm');
+        margin-bottom: 16px;        
+        @media (min-width: $breakpoints-tablet) {
+            @include typography('heading md');  
+        } 
+        @media (min-width: $breakpoints-tablet) {
+            @include typography('heading sm');  
         }
     }
     .card__body-location{
