@@ -1,0 +1,71 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding-bottom: 1.5rem;
+
+    &__inner {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        > div:first-child {
+            width: 35%;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        &__inner {
+            width: 90%;
+            > div:first-child {
+                width: 45%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        &__inner {
+            width: 95%;
+            justify-content: left;
+            display: block;
+            > div:first-child {
+                width: 100%;
+            }
+        }
+        &__button {
+            margin-top: 1rem;
+        }
+    }
+
+    &__title {
+        font-size: 25px;
+        padding: 0px 0px 1rem 0px;
+        font-weight: bold;
+    }
+
+    &__description {
+        line-height: 25px;
+    }
+
+    &__button {
+        border: rgba(56, 56, 56, 0.331) 1px solid;
+        display: inline-block;
+        padding: 15px 30px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: rgb(56, 56, 56);
+        text-decoration: none;
+        transition: border 0.3s;
+        &:hover {
+            border: rgb(56, 56, 56) 1px solid;
+        }
+        &:after {
+            background-image: url(/assets/icons/arrow.svg);
+            background-size: 100% 100%;
+            width: 14px;
+            height: 14px;
+            content: "";
+            display:inline-block;
+            margin-left: 0.5rem;
+        }
+    }
+}
