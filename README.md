@@ -33,21 +33,7 @@ Feel free to reach out if you have any questions or need assistance during the t
 
 ### NOTES
 
-CTA:
 
-    No margin below (SORTED)
-    Looks strange on mobile (SORTED)
-    Text chevron is not looking great (SORTED)
-
-Cards:
-
-    Height is strange (SORTED)
-    No backdrop under text, although some text shadow to help with legibility (SORTED)
-
-    To do - 
-    
-    sort pindrop icons "https://css.gg/chevron-right"
-    add ipad breakpoint
 
 
 
