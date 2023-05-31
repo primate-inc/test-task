@@ -60,8 +60,16 @@
     border-radius: 8px;
     display: inline-block;
     padding: 12px 16px;
+    transition: all 0.3s ease-in;
     &:hover{
-        color: #3F3F46;
+        background-color: #3F3F46;
+        color: white;
+        transition: all 0.3s ease-in;
+        .fa-angle-right{
+            color: white;
+            transition: all 0.3s ease-in;
+            transform: translate(2px, 0);
+        }
     }
     @include typography('label sm');       
     @media (min-width: $breakpoints-tablet) {
@@ -71,6 +79,7 @@
         color: #26272B;
         display: inline-block;
         margin-left: 14px;
+        transition: all 0.3s ease-in;
     }     
 }
 
