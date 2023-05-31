@@ -46,7 +46,7 @@ Cards:
 
     To do - 
     
-    sort pindrop icons
+    sort pindrop icons "https://css.gg/chevron-right"
     add ipad breakpoint
 
 
