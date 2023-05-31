@@ -1,25 +1,42 @@
 .listing {
   @include responsive-grid();
+  
 
   &__inner {
     grid-column: slot(grid, wide);
+    grid-gap: 1.5rem;
     display: flex;
-    justify-content: space-between;
-    
+    flex-flow: row wrap;
+    width: 100%;
+
     @include screen(tablet) {
       flex-flow: row wrap;
+      max-width: 52rem;
     }
 
+    @include screen(desktop) {
+      flex-flow: row wrap;
+      max-width: 80rem;
+    }
+
+    
   }
 }
 
 .card {
     position: relative;
     overflow: hidden;
-    width: 389px;
+    max-width: 389px;
     height: 480px;
     border-radius: 8px;
-    margin-bottom: 5rem;
+    
+    @include screen(tablet) {
+      margin-bottom: 5rem;
+    }
+
+    @include screen(desktop) {
+      margin-bottom: 5rem;
+    }
 
     &__media {
         position: relative;
@@ -89,6 +106,8 @@
       background: token(color, neutrals, '100');
       color: token(color, neutrals, '700');
     }
+
+    margin-bottom: 1.5rem;
   }
 }
 

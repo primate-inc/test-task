@@ -5,7 +5,20 @@
     &__inner {
       grid-column: slot(grid, wide);
       display: flex;
-      justify-content: space-between;
+      flex-flow: row wrap;
+      width: 100%;
+      grid-gap: 1rem;
+
+      @include screen(tablet) {
+        max-width: 50rem;
+        justify-content: space-between;
+      }
+
+      @include screen(desktop) {
+        max-width: 76rem;
+        justify-content: space-between;
+      }
+
     }
 
     &__content {
