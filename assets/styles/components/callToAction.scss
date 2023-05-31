@@ -1,0 +1,78 @@
+.callToAction {
+    @include responsive-grid();
+    margin-bottom: 3rem;
+  
+    &__inner {
+      grid-column: slot(grid, wide);
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      grid-gap: 1rem;
+
+      @include screen(tablet) {
+        max-width: 50rem;
+        justify-content: space-between;
+      }
+
+      @include screen(desktop) {
+        max-width: 76rem;
+        justify-content: space-between;
+      }
+
+    }
+
+    &__content {
+        &-intro {
+            @include typography('heading lg');
+        }
+
+        &-paragraph {
+            margin-top: 1.5em;
+            @include typography('text lg');
+            color: token(color, neutrals, '900');
+        }
+    }
+
+    &__button {
+        .icon-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin: auto;
+        border: 1px solid token(color, neutrals, '300');
+        width: 120px;
+        height: 44px;
+
+        &:hover {
+            cursor:pointer;
+            border: 1px solid token(color, neutrals, '400');
+        }
+
+        &:active {
+            cursor:pointer;
+            border: 1px solid token(color, neutrals, '600');
+        }
+
+        background: token(color, base, 'white');
+        @include typography('label md');
+
+        
+        
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 14px;
+            margin-left: 1rem;
+            line-height: 100%;
+            background-image: url("/assets/icons/arrow.svg");
+          }
+        }
+
+        
+    }
+  }

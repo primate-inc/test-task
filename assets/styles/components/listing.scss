@@ -1,0 +1,117 @@
+.listing {
+  @include responsive-grid();
+  
+
+  &__inner {
+    grid-column: slot(grid, wide);
+    grid-gap: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+    @include screen(tablet) {
+      flex-flow: row wrap;
+      max-width: 52rem;
+    }
+
+    @include screen(desktop) {
+      flex-flow: row wrap;
+      max-width: 80rem;
+    }
+
+    
+  }
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    max-width: 389px;
+    height: 480px;
+    border-radius: 8px;
+    
+    @include screen(tablet) {
+      margin-bottom: 5rem;
+    }
+
+    @include screen(desktop) {
+      margin-bottom: 5rem;
+    }
+
+    &__media {
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+
+    &__body {
+      position: absolute;
+      z-index: 2;
+      top: 283.25px;
+      padding: 36px 24px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+      &-label {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 125%;
+        // @include typography('label xs'); -- dose not work
+      }
+
+      &-title {
+        margin-top: 12px;
+        @include typography('heading sm');
+        color: token(color, base, 'white');
+      }
+
+      &-location {
+        margin-top: 12px;
+        @include typography('label sm');
+        color: token(color, base, 'white');
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 11.2px;
+          height: 13.6px;
+          margin-right: 6.4px;
+          background-image: url("/assets/icons/map-pin.svg");
+        }
+      }
+  }
+
+  &:nth-child(1) {
+    .card__body-label {
+      /* Set the color for the first card */
+      background: token(color, secondary, '100');
+      color: token(color, secondary, '700');
+    }
+
+  }
+  &:nth-child(2) {
+    .card__body-label {
+      /* Set the color for the second card */
+      background: token(color, primary, '100');
+      color: token(color, primary, '700');
+    }
+
+  }
+  &:nth-child(3) {
+    .card__body-label {
+      /* Set the color for the third card */
+      background: token(color, neutrals, '100');
+      color: token(color, neutrals, '700');
+    }
+
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Image Zoom in */
+.card:hover .card__media {
+  transform: scale(1.1);
+}
