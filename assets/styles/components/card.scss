@@ -1,0 +1,275 @@
+.card {
+
+  // MEDIA QUERY FOR TABELTS AND SMALLER - CARDS SWITCH TO COLUMN FLEX 
+
+  @media(max-width: 767px) {
+
+    & {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      color: white;
+      height: 60vh;
+    }
+
+    &__media {
+      width: 100%;
+      height: 100%;
+    }
+
+    // CARD IMAGE
+
+    &__media-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      scale: 100%;
+      transition: 0.3s;
+    }
+
+    &__media-image:hover {
+      scale: 107%;
+    }
+
+    // CARD TEXT
+
+    &__body {
+      position: sticky;
+      bottom: -2%;
+      padding: 20px;
+      background-image: linear-gradient(transparent, black);
+
+    }
+
+    &__body-label-1 {
+      @include typography('label sm');
+      background-color: $color-secondary-100;
+      color: $color-secondary-800;
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 15px;
+    }
+
+    &__body-label-2 {
+      @include typography('label sm');
+      background-color: $color-primary-100;
+      color: $color-primary-500;
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 15px;
+    }
+
+    &__body-label-3 {
+      @include typography('label sm');
+      background-color: rgba(244, 244, 244, 255);
+      color: rgba(74, 74, 81, 255);
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 15px;
+    }
+
+    &__body-title {
+      @include typography('heading md');
+      font-size: 20 !important;
+      margin-top: 10px;
+      text-shadow: rgb(0, 0, 0) 1 0 7px;
+      margin-left: 15px;
+    }
+
+    &__body-location {
+      @include typography('text md');
+      margin-top: 15px;
+      text-shadow: rgb(0, 0, 0) 1px 0 7px;
+      margin-left: 15px;
+    }
+
+  }
+
+  // TABLET MEDIA QUERY
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    & {
+      width: 49%;
+      height: 49%;
+      max-height: 60vh;
+      overflow: hidden;
+      border-radius: 10px;
+      color: white;
+    }
+
+    &__media {
+      width: 100%;
+      height: 100%;
+    }
+
+    // CARD IMAGE
+
+    &__media-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      scale: 100%;
+      transition: 0.3s;
+    }
+
+    &__media-image:hover {
+      scale: 107%;
+    }
+
+    // CARD TEXT
+
+    &__body {
+      position: sticky;
+      bottom: -2%;
+      padding: 20px;
+      background-image: linear-gradient(transparent, black);
+
+    }
+
+    &__body-label-1 {
+      @include typography('label sm');
+      background-color: $color-secondary-100;
+      color: $color-secondary-800;
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 15px;
+    }
+
+    &__body-label-2 {
+      @include typography('label sm');
+      background-color: $color-primary-100;
+      color: $color-primary-500;
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 15px;
+    }
+
+    &__body-label-3 {
+      @include typography('label sm');
+      background-color: rgba(244, 244, 244, 255);
+      color: rgba(74, 74, 81, 255);
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 15px;
+    }
+
+    &__body-title {
+      @include typography('heading md');
+      font-size: 23 !important;
+      margin-top: 10px;
+      text-shadow: rgb(0, 0, 0) 1 0 7px;
+      margin-left: 15px;
+    }
+
+    &__body-location {
+      @include typography('text md');
+      margin-top: 15px;
+      text-shadow: rgb(0, 0, 0) 1px 0 7px;
+      margin-left: 15px;
+    }
+
+  }
+
+  // CARDS MATCH REFERENCE IN LAPTOP SIZE - FLEX ROW
+
+  @media(min-width: 1024px) {
+
+    & {
+      width: 35%;
+      overflow: hidden;
+      border-radius: 10px;
+      color: white;
+    }
+
+    &__media {
+      width: 100%;
+      height: 100%;
+    }
+
+    // CARD IMAGE
+
+    &__media-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      scale: 100%;
+      transition: 0.3s;
+    }
+
+    &__media-image:hover {
+      scale: 107%;
+    }
+
+    // CARD TEXT
+
+    &__body {
+      position: sticky;
+      bottom: -2%;
+      padding: 20px;
+      background-image: linear-gradient(transparent, black);
+    }
+
+    &__body-label-1 {
+      @include typography('label sm');
+      background-color: $color-secondary-100;
+      color: $color-secondary-800;
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 20px;
+    }
+
+    &__body-label-2 {
+      @include typography('label sm');
+      background-color: $color-primary-100;
+      color: $color-primary-500;
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 20px;
+    }
+
+    &__body-label-3 {
+      @include typography('label sm');
+      background-color: rgba(244, 244, 244, 255);
+      color: rgba(74, 74, 81, 255);
+      padding: 7px 18px 7px 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 20px;
+    }
+
+    &__body-title {
+      @include typography('heading sm');
+      font-size: 27 !important;
+      margin-top: 20px;
+      text-shadow: rgb(0, 0, 0) 1 0 7px;
+      margin-left: 20px;
+    }
+
+    &__body-location {
+      @include typography('text md');
+      margin-top: 15px;
+      text-shadow: rgb(0, 0, 0) 1px 0 7px;
+      margin-left: 20px;
+    }
+
+  }
+
+}

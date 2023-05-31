@@ -31,3 +31,9 @@ Examples of how to use this package can be found within this project. For more i
 
 Feel free to reach out if you have any questions or need assistance during the test task. Good luck!
 
+### NOTES
+
+
+
+
+
