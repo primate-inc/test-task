@@ -33,11 +33,21 @@ Feel free to reach out if you have any questions or need assistance during the t
 
 ### NOTES
 
-1 - address feedback notes:
+CTA:
 
-1a - address box heights - look into margin top and bottom / see if possible to overlay figma image or screenshot and match this
-1b - address CTA feedback comments
+    No margin below (SORTED)
+    Looks strange on mobile (SORTED)
+    Text chevron is not looking great (SORTED)
 
-2 - try and refactor code to use mixin / mono package
-3 - add an extra breakpoint for Ipad
+Cards:
+
+    Height is strange (SORTED)
+    No backdrop under text, although some text shadow to help with legibility (SORTED)
+
+    To do - 
+    
+    sort pindrop icons
+    add ipad breakpoint
+
+
 
