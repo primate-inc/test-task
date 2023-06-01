@@ -5,21 +5,23 @@
 	position: relative; // for absolute positioning of __body
 
 	// landscape card orientation
-	width: 550;
-	height: 250;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 100%;
+	aspect-ratio: 2/1;
+	min-height: fit-content;
+
+	@include screen(smaller) {
+		flex-basis: 85%;
+		aspect-ratio: 2.5/1.2;
+		width: 100%;
+	}
 
 	// smaller card size
-	@include screen(small) {
-		width: 300;
-		height: 375;
+	@include screen(tablet) {
+		aspect-ratio: 389/480;
+		flex-basis: 31%;
 	}
-
-	// original card size
-	@include screen(medium) {
-		width: 389;
-		height: 480;
-	}
-
 	&__media {
 		text-align: center;
 		object-fit: cover;
@@ -27,6 +29,7 @@
 	}
 
 	&__body {
+		width: 100%;
 		background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 		padding: 48px 24px 24px 24px;
 		position: absolute;
@@ -44,7 +47,13 @@
 		}
 
 		&-title {
-			font-size: 24px;
+			// smaller font size for small phones
+			font-size: 18px;
+			// larger font size for other screens
+			@include screen(smaller) {
+				font-size: 24px;
+			}
+
 			font-weight: 700;
 			line-height: 125%;
 			color: token("color", "base", "white");

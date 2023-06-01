@@ -7,7 +7,7 @@
 		justify-content: center;
 		align-items: center;
 		// align CTA with text on desktop
-		@include screen(medium) {
+		@include screen(large) {
 			align-items: start;
 		}
 		// spacing between CTA and text
@@ -16,7 +16,7 @@
 		text-align: center;
 		margin-bottom: 40px;
 
-		@include screen(medium) {
+		@include screen(large) {
 			flex-direction: row;
 			justify-content: space-between;
 			text-align: start;
@@ -27,10 +27,10 @@
 	&__content {
 		width: 80%;
 
-		@include screen(small) {
+		@include screen(medium) {
 			width: fit-content;
 		}
-		@include screen(medium) {
+		@include screen(large) {
 			width: 40%;
 		}
 
@@ -40,7 +40,7 @@
 
 		&-paragraph {
 			@include typography("text lg");
-			@include screen(medium) {
+			@include screen(large) {
 				margin-top: 24px;
 			}
 			margin-top: 0;

@@ -29,7 +29,13 @@ $configs: (
 	),
 	breakpoints: (
 		"default": 0rem,
-		"small": 64rem,
-		"medium": 78.125rem,
+		//425px
+		"smaller": 26rem,
+		//728px
+		"tablet": 45.5rem,
+		//1024px
+		"medium": 64rem,
+		//1250px
+		"large": 78.125rem,
 	),
 );
