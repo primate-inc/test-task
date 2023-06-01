@@ -1,0 +1,75 @@
+// CTA media queries
+.cta {
+  // larger tablet screens
+  @media (max-width: $breakpoints-tablet-wide) {
+    justify-content: center;
+    max-width: 100%;
+    padding: 0px 32px 40px;
+
+    &__inner {
+      justify-content: flex-start;
+      width: 100%;
+      padding: 0px 0px 40px;
+    }
+
+    &__content {
+      flex-direction: column;
+
+      &-button {
+        right: 0;
+      }
+    }
+  }
+
+  // small screens
+  @media (max-width: 660px) {
+    &__content {
+      width: 100%;
+
+      &-button {
+        position: relative;
+        left: 0;
+        right: unset;
+        top: unset;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.listing {
+  // larger tablet screens
+  @media (max-width: $breakpoints-tablet-wide) {
+    justify-content: center;
+    max-width: 100%;
+    padding: 0px 32px 80px;
+
+    &__inner {
+      justify-content: center;
+      max-width: 100%;
+      padding: 0px 0px 80px;
+    }
+
+    &__item {
+      width: calc((100% - 32px) / 2);
+    }
+  }
+
+  // medium screens
+  @media (max-width: $breakpoints-tablet) {
+    &__inner {
+      justify-content: flex-start;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+
+  // small screens
+  @media (max-width: $breakpoints-default) {
+    &__inner {
+      margin: 0;
+    }
+  }
+}

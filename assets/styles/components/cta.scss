@@ -3,43 +3,41 @@
   @include responsive-grid();
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: space-between;
-  position: relative;
   padding: 0px 80px 80px;
   gap: 24px;
-  width: 1440px;
-  height: 212px;
+  max-width: 1440px;
+  min-height: 212px;
   height: auto;
   margin-bottom: 0;
-  border: 1px solid red;
 
   // inner container
   &__inner {
-    // please review this 
     grid-column: slot(grid, full);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0px 32px;
     gap: 24px;
     isolation: isolate;
-    // parent to button
     position: relative;
-    width: 1280px;
-    height: 132px;
-    border: 1px dashed blue;
+    max-width: 1280px;
+    min-height: 132px;
+    height: auto;
   }
 
   // content container
   &__content {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    width: 532px;
-    height: 132px;
+    width: 100%;
+    max-width: 532px;
+    min-height: 132px;
 
     &-title {
       @include typography("heading lg");
@@ -53,23 +51,29 @@
       @include typography("label md");
       background: transparent;
       color: $color-neutrals-700;
+      border: 1px solid $color-neutrals-300;
       box-sizing: border-box;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       padding: 12px 16px;
-      // force centred btn content
-      // figma has a hidden icon
       padding-left: 21px;
       position: absolute;
       width: 120px;
       height: 44px;
       right: 32px;
       top: 0px;
-      border: 1px solid $color-neutrals-300;
+      transition: transform 0.1s ease;
       border-radius: 8px;
       cursor: pointer;
+
+      &:hover {
+        /* Styles for hover state - no token provided */
+        background-color: $color-neutrals-100;
+        border-color: $color-neutrals-400;
+        transform: scale(1.05);
+      }
     }
 
     &-button-icon {
@@ -77,6 +81,7 @@
       height: 1.3em;
       margin-left: 8px;
       margin-right: -2px;
+      color: $color-neutrals-800;
     }
   }
 }

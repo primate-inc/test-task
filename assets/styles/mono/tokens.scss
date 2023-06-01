@@ -113,7 +113,7 @@ $font-desktop-heading-lg: ("fontSize": 40, "textDecoration": none, "fontFamily":
 $font-desktop-heading-md: ("fontSize": 32, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 700, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 40, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-desktop-heading-sm: ("fontSize": 24, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 700, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 30, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-desktop-heading-xs: ("fontSize": 20, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 700, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 25, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
-$font-desktop-lable-lg: ("fontSize": 18, "textDecoration": underline, "fontFamily": Plus Jakarta Sans, "fontWeight": 600, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 22.5, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-desktop-label-lg: ("fontSize": 18, "textDecoration": underline, "fontFamily": Plus Jakarta Sans, "fontWeight": 600, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 22.5, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-desktop-label-md: ("fontSize": 16, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 600, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 20, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-desktop-label-sm: ("fontSize": 14, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 600, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 17.5, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-desktop-text-xl: ("fontSize": 20, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 500, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 32, "paragraphIndent": 0, "paragraphSpacing": 20, "textCase": none) !default;
@@ -127,7 +127,7 @@ $font-mobile-heading-lg: ("fontSize": 34, "textDecoration": none, "fontFamily": 
 $font-mobile-heading-md: ("fontSize": 28, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 700, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 35, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-mobile-heading-sm: ("fontSize": 24, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 700, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 30, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-mobile-heading-xs: ("fontSize": 20, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 700, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 25, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
-$font-mobile-lable-lg: ("fontSize": 18, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 500, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 27, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
+$font-mobile-label-lg: ("fontSize": 18, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 500, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 27, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-mobile-label-md: ("fontSize": 16, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 600, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 24, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-mobile-label-sm: ("fontSize": 14, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 500, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 21, "paragraphIndent": 0, "paragraphSpacing": 0, "textCase": none) !default;
 $font-mobile-text-xl: ("fontSize": 20, "textDecoration": none, "fontFamily": Plus Jakarta Sans, "fontWeight": 400, "fontStyle": normal, "fontStretch": normal, "letterSpacing": 0, "lineHeight": 30, "paragraphIndent": 0, "paragraphSpacing": 20, "textCase": none) !default;
@@ -295,7 +295,7 @@ $tokens: (
       'heading md': $font-desktop-heading-md,
       'heading sm': $font-desktop-heading-sm,
       'heading xs': $font-desktop-heading-xs,
-      'lable lg': $font-desktop-lable-lg,
+      'label lg': $font-desktop-label-lg,
       'label md': $font-desktop-label-md,
       'label sm': $font-desktop-label-sm,
       'text xl': $font-desktop-text-xl,
@@ -311,7 +311,7 @@ $tokens: (
       'heading md': $font-mobile-heading-md,
       'heading sm': $font-mobile-heading-sm,
       'heading xs': $font-mobile-heading-xs,
-      'lable lg': $font-mobile-lable-lg,
+      'label lg': $font-mobile-label-lg,
       'label md': $font-mobile-label-md,
       'label sm': $font-mobile-label-sm,
       'text xl': $font-mobile-text-xl,
