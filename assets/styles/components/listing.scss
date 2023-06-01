@@ -19,29 +19,33 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 480px;
-    min-width: 370px;
+    min-width: 320px;
     flex: 1;
+
   }
 }
 
 .card {
   position: relative;
+  transition: .3s ease-in-out;
+
+
+  &:hover &__media-image {
+    transform: scale(1.1);
+  }
 
   &__media {
-    object-fit: cover;
-    height: 100%;
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
 
+
     &-image {
+      object-fit: cover;
       height: 480px;
       width: 100%;
       transition: .3s ease-in-out;
 
-      &:hover {
-        transform: scale(1.1);
-      }
     }
   }
 
