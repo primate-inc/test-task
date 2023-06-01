@@ -4,13 +4,31 @@
     padding-right: 1rem;
     
     &__inner {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
 
-        @include screen(tablet) {
-            grid-template-columns: repeat(3, 1fr);
+        // md
+        @media (min-width: 768px) { 
+            grid-template-columns: repeat(2, 1fr);
+
+            .card:last-child {
+                grid-column: span 2;
+            }
         }
+
+        // lg
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+
+            .card:last-child {
+                grid-column: auto;
+            }
+        }
+
+        // @include screen(tablet) {
+        //     grid-template-columns: repeat(3, 1fr);
+        // }
     }
   
     &__item {

@@ -90,11 +90,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   @include screen(desktop) {
     padding-top: 0rem;
     padding-bottom: 0rem;
+  }
+}
+
+.desktop-break {
+  display: none;
+  // md
+  @media (min-width: 768px) { 
+    display: inline-block;
   }
 }
