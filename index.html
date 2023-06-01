@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <main class="main">
+  <main class="main" role="main">
     <div class="component info-box">
       <div class="info-box__inner">
         <div class="info-box__content">
@@ -68,10 +68,10 @@
           </p>
         </div>
         <!-- CTA Button with heroicon -->
-        <button class="cta__content-button">
+        <button class="cta__content-button" tabindex="0" aria-label="See All">
           See All
           <img class="cta__content-button-icon" src="./assets/icons/chevron-right.svg"
-            alt="cta chevron-right arrow icon">
+            alt="cta chevron-right arrow icon" aria-hidden="true">
         </button>
       </div>
       <!-- end CTA component -->
@@ -81,7 +81,7 @@
       <!-- inner container -->
       <div class="listing__inner">
         <!-- card listing 1 -->
-        <a href="#" class="listing__item card">
+        <a href="#" class="listing__item card" tabindex="0" aria-label="View details of Adventure Tour in Norway">
           <!-- img card container -->
           <!-- the only change to this to wrap the text content within the card container -->
           <div class="card__media">
@@ -93,7 +93,7 @@
               <div class="card__body-title">Breathtaking views with our adventure tours</div>
               <div class="card__body-location">
                 <!-- location icon -->
-                <img src="./assets/icons/map-pin.svg" alt="map pin icon">
+                <img src="./assets/icons/map-pin.svg" alt="map pin icon" aria-hidden="true">
                 Norway
               </div>
             </div>
@@ -101,7 +101,7 @@
           </div>
         </a>
         <!-- card listing 2 -->
-        <a href="#" class="listing__item card">
+        <a href="#" class="listing__item card" tabindex="0" aria-label="View details of Luxury Retreats in Italy">
           <!-- img card container -->
           <div class="card__media">
             <img class="card__media-image" src="https://source.unsplash.com/random/900x600/?italy"
@@ -112,7 +112,7 @@
               <div class="card__body-title">Luxury Retreats in Europe's most beautiful cities</div>
               <div class="card__body-location">
                 <!-- location icon -->
-                <img src="./assets/icons/map-pin.svg" alt="map pin icon">
+                <img src="./assets/icons/map-pin.svg" alt="map pin icon" aria-hidden="true">
                 Italy
               </div>
             </div>
@@ -120,7 +120,7 @@
           </div>
         </a>
         <!-- card listing 3 -->
-        <a href="#" class="listing__item card">
+        <a href="#" class="listing__item card" tabindex="0" aria-label="View details of Romantic Escape in Greece">
           <!-- img card container -->
           <div class="card__media">
             <img class="card__media-image" src="https://source.unsplash.com/random/600x600/?greece"
@@ -131,7 +131,7 @@
               <div class="card__body-title">Romantic Escapes that you will never forget</div>
               <div class="card__body-location">
                 <!-- location icon -->
-                <img src="./assets/icons/map-pin.svg" alt="map pin icon">
+                <img src="./assets/icons/map-pin.svg" alt="map pin icon" aria-hidden="true">
                 Greece
               </div>
             </div>
