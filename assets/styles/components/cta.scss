@@ -6,6 +6,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		// align CTA with text on desktop
+		@include screen(medium) {
+			align-items: start;
+		}
 		flex-direction: column;
 		text-align: center;
 		margin-bottom: 40px;
