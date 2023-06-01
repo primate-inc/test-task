@@ -1,0 +1,230 @@
+// listing section styling
+.listing {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 80px 80px;
+  gap: 8px;
+  max-width: 1440px;
+  // height: 560px;
+  height: auto;
+  background: $color-base-white;
+  margin-top: 0;
+  border: 1px solid red;
+
+  // inner container
+  &__inner {
+    display: flex;
+    // breaks flex row for cards - swapped for row
+    // flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px 32px;
+    // gap: 64px;
+    // vertical gap spacing here - matches outer container spacing - perfect for mobile too
+    gap: 32px;
+    width: 1280px;
+    height: 480px;
+    border: 1px dashed blue;
+  }
+
+  &__item {
+    display: flex;
+    // flex-direction: row;
+    align-items: flex-start;
+    // this gap has no effect
+    // gap: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc((100% - 64px) / 3);
+    height: 480px;
+ 
+    // .card {
+    //   // added position (for child absolute)
+    //   // position: relative;
+    //   // width: 389.33px;
+    //   width: calc((100% - 64px) / 3);
+    //   height: 480px;
+    //   // duplicate unused background rule
+    //   // background: url(.jpg) via html src
+    //   // duplicate radius entry
+    //   border-radius: 8px;
+    // }
+
+    // img container
+    .card__media {
+      // added position (for child absolute)
+      position: relative;
+      width: 100%;
+      height: 480px;
+      width: 100%;
+      // display: flex;
+      // flex-direction: row;
+      // align-items: flex-start;
+      // padding: 0px;
+      // Figma related (breaks layout) - ok?!
+      // position: absolute;
+      // left: 0px;
+      // right: 0.33px;
+      // top: -0.25px;
+      // bottom: 0.25px;
+      // background: url(.jpg) via html src
+      // border-radius: 8px;
+
+      // &-image {??
+      .card__media-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        transition: transform 0.4s ease;
+      }
+
+      &:hover .card__media-image {
+        transform: scale(1.125);
+      }
+    }
+
+    // card content [container]
+    .card__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // changed bottom from 24px to match design
+      padding: 48px 24px 12px;
+      gap: 12px;
+      // un-required positioning
+      // left: 0px;
+      // right: 0.33px;
+      // bottom: 0px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      // for responsive design
+      top: auto;
+      height: auto;
+      min-height: 197px;
+      // gradient
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      border: 2px solid yellowgreen;
+      // content - actually split into 2:
+      // 'content' contains 'badge' and 'heading' styles
+      // &-content {
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      //   padding: 0px;
+      //   gap: 12px;
+      //   width: 341px;
+      //   height: 95px;
+      // }
+
+      // // 'info' contains icon and location label
+      // &-info {
+      //   display: flex;
+      //   flex-direction: row;
+      //   align-items: center;
+      //   padding: 0px;
+      //   gap: 5px;
+      //   // auto?
+      //   width: 74px;
+      //   height: 18px;
+      // }
+      // // badge - should be called 'badge' ideally (surrounding container)
+      // &-label-badge {
+      //   display: flex;
+      //   flex-direction: row;
+      //   align-items: center;
+      //   padding: 4px;
+      //   width: 81px;
+      //   height: 23px;
+      // }
+
+      // // another additional container (badge label-container)
+      // &-label-container {
+      //   display: flex;
+      //   flex-direction: row;
+      //   align-items: flex-start;
+      //   padding: 0px 6px;
+      //   gap: 8px;
+      //   width: 73px;
+      //   height: 15px;
+      // }
+
+      &-label {
+        // there is no xs - could create one [TODO]
+        @include typography("label sm");
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 4px 10px;
+        width: auto;
+        height: 100%;
+        // border: 1px dashed red;
+
+        // separated classes for 3 color themes
+        &.label-adventure {
+          color: $color-secondary-700;
+          background: $color-secondary-100;
+        }
+
+        &.label-luxury {
+          color: $color-primary-700;
+          background: $color-primary-100;
+        }
+
+        &.label-romantic {
+          color: $color-neutrals-700;
+          background: $color-neutrals-100;
+        }
+      }
+
+      // yet another missing container 'heading icon'
+      /* 
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 16px;
+      width: 341px;
+      height: 60px;
+      */
+
+      // 'heading' title
+      &-title {
+        @include typography("heading sm");
+        color: $color-base-white;
+        // border: 1px dashed red;
+      }
+
+      &-location {
+        @include typography("label sm");
+        color: $color-base-white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1em;
+        padding: 4px;
+        // fix alignment to layout
+        padding-left: 0;
+        // not required - merged containers
+        // width: 53px;
+        // height: 18px;
+        width: 81px;
+        height: 23px;
+        // border: 1px dashed red;
+
+        img {
+          width: 16px;
+          height: 16px;
+          // to match design preview
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+}

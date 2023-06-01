@@ -10,17 +10,25 @@
   gap: 24px;
   width: 1440px;
   height: 212px;
+  height: auto;
+  margin-bottom: 0;
+  border: 1px solid red;
 
   // inner container
   &__inner {
+    // please review this 
+    grid-column: slot(grid, full);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px 32px;
     gap: 24px;
     isolation: isolate;
+    // parent to button
+    position: relative;
     width: 1280px;
     height: 132px;
+    border: 1px dashed blue;
   }
 
   // content container
@@ -52,6 +60,7 @@
       align-items: center;
       padding: 12px 16px;
       // force centred btn content
+      // figma has a hidden icon
       padding-left: 21px;
       position: absolute;
       width: 120px;
