@@ -1,0 +1,98 @@
+.cta {
+	@include responsive-grid();
+
+	&__inner {
+		grid-column: slot(grid, wide);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// align CTA with text on desktop
+		@include screen(large) {
+			align-items: start;
+		}
+		// spacing between CTA and text
+		gap: 12px; // only in mobile (due to the vertical stack)
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 40px;
+
+		@include screen(large) {
+			flex-direction: row;
+			justify-content: space-between;
+			text-align: start;
+			margin-bottom: 80px;
+		}
+	}
+
+	&__content {
+		width: 80%;
+
+		@include screen(medium) {
+			width: fit-content;
+		}
+		@include screen(large) {
+			width: 40%;
+		}
+
+		&-heading {
+			@include typography("heading lg");
+		}
+
+		&-paragraph {
+			@include typography("text lg");
+			@include screen(large) {
+				margin-top: 24px;
+			}
+			margin-top: 0;
+		}
+	}
+
+	&__btnWrapper {
+		&-btn {
+			border: 1px solid;
+			background: transparent;
+			border-color: token("color", "neutrals", "300");
+			color: token("color", "neutrals", "700");
+
+			padding: 12px 24px;
+			border-radius: 8px;
+			font-weight: 600;
+			transition: all 0.15s;
+
+			display: flex;
+			align-items: center;
+
+			width: fit-content;
+			height: fit-content;
+
+			@include typography("label md");
+		}
+
+		// on hover styling
+		&-btn:hover {
+			cursor: pointer;
+			border-color: token("color", "neutrals", "400");
+			color: token("color", "neutrals", "900");
+		}
+
+		// on active/press styling
+		&-btn:active {
+			border-color: token("color", "neutrals", "500*");
+			color: token("color", "neutrals", "900");
+		}
+
+		// no need for :focus styling;
+		// clashes with :active when button is clicked
+
+		// on disabled
+		&-btn:disabled {
+			border-color: token("color", "neutrals", "300");
+			color: token("color", "neutrals", "400");
+		}
+
+		//insert the icon
+		&-icon {
+			margin-left: 14px;
+		}
+	}
+}

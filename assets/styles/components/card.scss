@@ -1,0 +1,100 @@
+.card {
+	margin-bottom: 20px; // spacing
+	border-radius: 8;
+	overflow: hidden;
+	position: relative; // for absolute positioning of __body
+
+	// landscape card orientation
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 100%;
+	aspect-ratio: 2/1;
+	min-height: fit-content;
+
+	@include screen(smaller) {
+		flex-basis: 85%;
+		aspect-ratio: 2.5/1.2;
+		width: 100%;
+	}
+
+	// smaller card size
+	@include screen(tablet) {
+		aspect-ratio: 389/480;
+		flex-basis: 31%;
+	}
+	&__media {
+		text-align: center;
+		object-fit: cover;
+		transition: transform 0.2s;
+	}
+
+	&__body {
+		width: 100%;
+		background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+		padding: 48px 24px 24px 24px;
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+
+		&-label {
+			font-size: 12px;
+			border-radius: 4px;
+			color: rgba(105, 39, 218, 1);
+			background-color: rgba(236, 233, 254, 1);
+			padding: 4px 10px;
+			width: fit-content;
+		}
+
+		&-title {
+			// smaller font size for small phones
+			font-size: 18px;
+			// larger font size for other screens
+			@include screen(smaller) {
+				font-size: 24px;
+			}
+
+			font-weight: 700;
+			line-height: 125%;
+			color: token("color", "base", "white");
+			margin: 12px 0;
+		}
+
+		&-location {
+			display: flex;
+			align-items: center;
+			font-size: 14px;
+			line-height: 17.5px;
+			font-weight: 600;
+			color: token("color", "base", "white");
+
+			// insert the pin svg behind the Location text
+			&::before {
+				content: url("/assets/icons/map-pin.svg");
+				display: inline-block;
+				width: 11.2px;
+				height: 13.6px;
+				margin-right: 7.4px;
+			}
+		}
+	}
+
+	// change Card2 & Card3's labels (color & bgColor)
+	&:nth-child(2) {
+		.card__body-label {
+			background-color: rgba(209, 233, 255, 1);
+			color: rgba(23, 92, 211, 1);
+		}
+	}
+	&:nth-child(3) {
+		.card__body-label {
+			background-color: rgba(244, 244, 244, 1);
+			color: rgba(63, 63, 70, 1);
+		}
+	}
+}
+
+// on entire card hover, transform &__media for Zooming
+.card:hover .card__media {
+	transform: scale(1.1);
+}
