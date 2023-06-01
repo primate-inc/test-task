@@ -1,0 +1,124 @@
+.listing {
+  @include responsive-grid();
+
+  &__inner {
+    grid-column: slot(grid, wide);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24.4px;
+    padding: 0px 0px 80px;
+
+    @include screen(tablet) {
+      padding: 0px 0px 80px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 480px;
+    min-width: 320px;
+    flex: 1;
+
+  }
+}
+
+.card {
+  position: relative;
+  transition: .3s ease-in-out;
+
+
+  &:hover &__media-image {
+    transform: scale(1.1);
+  }
+
+  &__media {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+
+
+    &-image {
+      object-fit: cover;
+      height: 480px;
+      width: 100%;
+      transition: .3s ease-in-out;
+
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px 24px 24px;
+    gap: 12px;
+    position: absolute;
+    height: 197px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    border-radius: 8px;
+
+
+    &-label {
+      font-family: 'Plus Jakarta Sans';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 4px;
+      border-radius: 4px;
+
+      &-first {
+        background-color: token(color, secondary, '100');
+        color: token(color, secondary, '700');
+      }
+
+      &-second {
+        background-color: token(color, primary, '100');
+        color: token(color, primary, '700');
+      }
+
+      &-third {
+        background-color: token(color, neutrals, '100');
+        color: token(color, neutrals, '700');
+      }
+    }
+
+    &-title {
+      @include screen(desktop) {
+        @include typography('heading sm');
+      }
+
+      @include typography('heading sm');
+      color: token(color, base, 'white');
+    }
+
+    &-location {
+      @include screen(desktop) {
+        @include typography('label sm');
+      }
+
+      @include typography('label sm');
+      color: token(color, base, 'white');
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 11.2px;
+        height: 13.6px;
+        margin-right: 7.4;
+        background-image: url("/assets/icons/map-pin.svg");
+      }
+    }
+
+
+  }
+}
