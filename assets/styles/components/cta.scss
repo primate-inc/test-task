@@ -10,6 +10,8 @@
 		@include screen(medium) {
 			align-items: start;
 		}
+		// spacing between CTA and text
+		gap: 12px; // only in mobile (due to the vertical stack)
 		flex-direction: column;
 		text-align: center;
 		margin-bottom: 40px;
