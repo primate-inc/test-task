@@ -1,40 +1,61 @@
 .header-container {
     display: flex;
-    padding: 2rem;
+    justify-content: space-evenly;
+    padding: 1rem ;
+}
 
-    .header-text {
-        flex-basis: 50%;
-
-        h1 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        p {
-            width: 50%;
-            margin-top: .8rem;
-            line-height: 1.5;
-        }
+.header-text {
+    max-width: 40rem;
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
     }
 
-    .header-cta {
-        flex-basis: 50%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: start;
-        a {
-            padding: .5rem 1rem;
-            border: 1px solid #666;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #000;
-            display: inline-block;
-            font-weight: 800;
-        }
+    p {
+        width: 75%;
+        margin-top: .8rem;
+        line-height: 1.5;
     }
 }
 
-@media(max-width: 998px){
+.header-cta {
+    flex-basis: 36rem;
+    padding-right: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    a {
+        padding: .5rem 1rem;
+        border: 1px solid #666;
+        border-radius: .3rem;
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+        font-weight: 800;
+    }
+
+    a::after {
+        content: "";
+        margin-left: .6rem;
+        background-image: url("../icons/arrow-icon.svg");
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        background-size: 1rem 1rem;
+      }
+
+    a:hover{
+        box-shadow: rgba(149, 157, 165, 0.2) 0rem .5rem 1.5rem;
+    }  
+
+    .header-cta::before{
+        content: url('../icons/arrow-icon.svg');
+        margin-right: .75rem;
+        }    
+}
+
+
+@media(max-width: 800px){
     .header-container{
         display: block;
 
@@ -42,7 +63,12 @@
             display: block;
             margin-top: 2rem;
         }
+
+        .header-text{
+            p{
+                width: 100%;
+            }
+        }
     }
-
-
 }
+
