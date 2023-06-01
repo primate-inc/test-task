@@ -1,0 +1,143 @@
+.cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 80px 80px;
+    gap: 24px;
+
+    width: 100vw;
+    height: 221px;
+
+    background: slot(page, background);
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        width: 88.889vw;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 0px 32px;
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1.962;
+
+        @media only screen and (max-width: 600px) and (min-width: 300px) {
+             margin-left: 3rem;
+        }
+
+        @media screen and (max-width: 325px) {
+            margin-left: 6rem;
+
+        }
+
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 0px;
+
+
+        }
+
+        &-heading {
+            @include typography("heading lg");
+            color: $color-neutrals-900;
+            width: 532px;
+            height: 50px;
+        }
+
+        &-paragraph {
+            @include typography("text lg");
+            color: $color-neutrals-900;
+            align-self: stretch;
+
+            @media screen and (max-width: 521px) {
+                max-width: 375px;
+
+            }
+
+            @media screen and (max-width: 325px) {
+                max-width: 362px;
+
+            }
+        }
+
+
+        &-btn {
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 15px;
+            width: 120px;
+            height: 44px;
+            background-color: transparent;
+            border-radius: 8px;
+
+
+            border: 1px solid $color-neutrals-300;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid $color-neutrals-400;
+            }
+
+            &:active {
+                border: 1px solid $color-neutrals-500;
+                transform: translateY(0.5px);
+            }
+
+        }
+
+        &-label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px 8px;
+            gap: 8px;
+            width: 93px;
+            height: 20px;
+
+            @include typography("label md");
+            color: $color-neutrals-700;
+
+            &:hover {
+                color: $color-neutrals-900;
+            }
+
+            &:focus {
+                color: $color-neutrals-700;
+            }
+        }
+
+        &-icon {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+
+            width: 20px;
+            height: 20px;
+
+
+        }
+
+    }
+
+    @media screen and (max-width: 521px) {
+        margin-bottom: 5rem;
+    }
+}
