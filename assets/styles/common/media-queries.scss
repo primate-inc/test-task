@@ -1,14 +1,15 @@
 // CTA media queries
 .cta {
-  // larger tablet screens
+  // tablet wide
   @media (max-width: $breakpoints-tablet-wide) {
     justify-content: center;
     max-width: 100%;
-    padding: 0px 32px 40px;
+    padding: 0px 24px 40px;
 
     &__inner {
       justify-content: flex-start;
       width: 100%;
+      // consistent bottom padding on flex
       padding: 0px 0px 40px;
     }
 
@@ -21,8 +22,8 @@
     }
   }
 
-  // small screens
-  @media (max-width: 660px) {
+  // custom (660px) and smaller tablets
+  @media (max-width: map-get($configs, breakpoints, 'custom-tablet')) {
     &__content {
       width: 100%;
 
@@ -38,11 +39,11 @@
 }
 
 .listing {
-  // larger tablet screens
+  // tablet wide
   @media (max-width: $breakpoints-tablet-wide) {
     justify-content: center;
     max-width: 100%;
-    padding: 0px 32px 80px;
+    padding: 0px 24px 80px;
 
     &__inner {
       justify-content: center;
@@ -51,12 +52,15 @@
     }
 
     &__item {
-      width: calc((100% - 32px) / 2);
+      width: calc((100% - 24px) / 2);
     }
   }
 
   // medium screens
   @media (max-width: $breakpoints-tablet) {
+
+    padding: 0px 24px 80px;
+
     &__inner {
       justify-content: flex-start;
     }
@@ -73,3 +77,5 @@
     }
   }
 }
+
+

@@ -82,3 +82,9 @@ body {
   height: auto;
   margin-bottom: 1.5em;
 }
+
+.section.animate {
+  opacity: 0;
+  animation: fadeSlideIn 0.5s ease-in-out forwards;
+  animation-delay: 0.2s;
+}

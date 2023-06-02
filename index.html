@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Primate - Front-End Developer Test Page</title>
+  <title>Primate - Front-End Developer Test - Matt Jones</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/index.scss" />
+  <!-- handleKeydown script -->
+  <script defer src="./assets/scripts/handle-keydown.js"></script>
+  <!-- get scrollY script -->
+  <script defer src="./assets/scripts/scroll-position.js"></script>
 </head>
 
 <body>
@@ -58,10 +62,10 @@
       </div>
     </div>
     <!-- CTA component -->
-    <section class="component cta">
+    <section class="section component cta">
+      <!-- container -->
       <div class="cta__inner">
         <div class="cta__content">
-          <!-- check headings defaults within Mono/Tokens styles -->
           <h2 class="cta__content-title">New Destinations</h2>
           <p class="cta__content-paragraph">
             So what are you waiting for? Start exploring our site today and get ready for an adventure of a lifetime!
@@ -77,13 +81,12 @@
       <!-- end CTA component -->
     </section>
     <!-- Listing [cards] component -->
-    <section class="component listing">
-      <!-- inner container -->
+    <section class="section component listing">
+      <!-- container -->
       <div class="listing__inner">
         <!-- card listing 1 -->
         <a href="#" class="listing__item card" tabindex="0" aria-label="View details of Adventure Tour in Norway">
-          <!-- img card container -->
-          <!-- the only change to this to wrap the text content within the card container -->
+          <!-- card container -->
           <div class="card__media">
             <img class="card__media-image" src="https://source.unsplash.com/random/600x1200/?norway"
               alt="Placeholder image" />
@@ -92,7 +95,6 @@
               <div class="card__body-label label-adventure">Adventure</div>
               <div class="card__body-title">Breathtaking views with our adventure tours</div>
               <div class="card__body-location">
-                <!-- location icon -->
                 <img src="./assets/icons/map-pin.svg" alt="map pin icon" aria-hidden="true">
                 Norway
               </div>
@@ -102,7 +104,7 @@
         </a>
         <!-- card listing 2 -->
         <a href="#" class="listing__item card" tabindex="0" aria-label="View details of Luxury Retreats in Italy">
-          <!-- img card container -->
+          <!-- card container -->
           <div class="card__media">
             <img class="card__media-image" src="https://source.unsplash.com/random/900x600/?italy"
               alt="Placeholder image" />
@@ -111,7 +113,6 @@
               <div class="card__body-label label-luxury">Luxury</div>
               <div class="card__body-title">Luxury Retreats in Europe's most beautiful cities</div>
               <div class="card__body-location">
-                <!-- location icon -->
                 <img src="./assets/icons/map-pin.svg" alt="map pin icon" aria-hidden="true">
                 Italy
               </div>
@@ -121,7 +122,7 @@
         </a>
         <!-- card listing 3 -->
         <a href="#" class="listing__item card" tabindex="0" aria-label="View details of Romantic Escape in Greece">
-          <!-- img card container -->
+          <!-- card container -->
           <div class="card__media">
             <img class="card__media-image" src="https://source.unsplash.com/random/600x600/?greece"
               alt="Placeholder image" />
@@ -130,7 +131,6 @@
               <div class="card__body-label label-romantic">Romantic</div>
               <div class="card__body-title">Romantic Escapes that you will never forget</div>
               <div class="card__body-location">
-                <!-- location icon -->
                 <img src="./assets/icons/map-pin.svg" alt="map pin icon" aria-hidden="true">
                 Greece
               </div>
@@ -140,9 +140,11 @@
         </a>
         <!-- end cards -->
       </div>
-      <!-- end listing component -->
+      <!-- end listing -->
     </section>
   </main>
+  <!-- optimize image load speed -->
+  <script src="./assets/scripts/img-preloader.js"></script>
 </body>
 
 </html>
