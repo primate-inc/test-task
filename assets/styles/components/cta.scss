@@ -1,0 +1,80 @@
+// CTA section styles
+.cta {
+  @include responsive-grid();
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 80px 80px;
+  gap: 24px;
+  max-width: 1440px;
+  min-height: 212px;
+  height: auto;
+  margin-bottom: 0;
+
+  // inner container
+  &__inner {
+    grid-column: slot(grid, full);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 32px;
+    gap: 24px;
+    isolation: isolate;
+    position: relative;
+    max-width: 1280px;
+    min-height: 132px;
+    height: auto;
+  }
+
+  // content container
+  &__content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 100%;
+    max-width: 532px;
+    min-height: 132px;
+
+    &-title {
+      @include typography("heading lg");
+    }
+
+    &-paragraph {
+      @include typography("text lg");
+    }
+
+    &-button {
+      @include typography("label md");
+      background: transparent;
+      color: $color-neutrals-700;
+      border: 1px solid $color-neutrals-300;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      padding: 12px 16px 12px 22px;
+      position: absolute;
+      width: 120px;
+      height: 44px;
+      right: 32px;
+      top: 0px;
+      transition: transform 0.1s ease;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-neutrals-100;
+        border-color: $color-neutrals-400;
+        transform: scale(1.05);
+      }
+
+      &-icon {
+        width: 1.3em;
+        height: 1.3em;
+        margin-left: auto;
+        margin-right: -2px;
+        color: $color-neutrals-800;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+// CTA media queries
+.cta {
+  // tablet wide
+  @media (max-width: $breakpoints-tablet-wide) {
+    justify-content: center;
+    max-width: 100%;
+    padding: 0px 24px 40px;
+
+    &__inner {
+      justify-content: flex-start;
+      width: 100%;
+      // consistent bottom padding on flex
+      padding: 0px 0px 40px;
+    }
+
+    &__content {
+      flex-direction: column;
+
+      &-button {
+        right: 0;
+      }
+    }
+  }
+
+  // custom (660px) and smaller tablets
+  @media (max-width: map-get($configs, breakpoints, 'custom-tablet')) {
+    &__content {
+      width: 100%;
+
+      &-button {
+        position: relative;
+        left: 0;
+        right: unset;
+        top: unset;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.listing {
+  // tablet wide
+  @media (max-width: $breakpoints-tablet-wide) {
+    justify-content: center;
+    max-width: 100%;
+    padding: 0px 24px 80px;
+
+    &__inner {
+      justify-content: center;
+      max-width: 100%;
+      padding: 0px 0px 80px;
+    }
+
+    &__item {
+      width: calc((100% - 24px) / 2);
+    }
+  }
+
+  // medium screens
+  @media (max-width: $breakpoints-tablet) {
+
+    padding: 0px 24px 80px;
+
+    &__inner {
+      justify-content: flex-start;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+
+  // small screens
+  @media (max-width: $breakpoints-default) {
+    &__inner {
+      margin: 0;
+    }
+  }
+}
+
+

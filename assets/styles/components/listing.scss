@@ -1,0 +1,134 @@
+// listing section styling
+.listing {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 80px 80px;
+  gap: 8px;
+  max-width: 1440px;
+  min-height: 560px;
+  // flex adjust
+  height: auto;
+  margin-top: 0;
+
+  // inner container
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 32px;
+    // 24px matches design (32px is spacious responsive)
+    gap: 24px;
+    max-width: 1280px;
+    min-height: 480px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 8px;
+    overflow: hidden;
+    // 32px x 2 or 24px x 2
+    width: calc((100% - 48px) / 3);
+    height: 480px;
+
+    // img container
+    .card__media {
+      position: relative;
+      width: 100%;
+      height: 480px;
+
+      // &-image settings w hover
+      .card__media-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        transition: transform 0.4s ease;
+      }
+
+      &:hover .card__media-image {
+        transform: scale(1.125);
+      }
+    }
+
+    // card content [container]
+    .card__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 48px 24px 8px;
+      min-height: 197px;
+      gap: 12px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: auto;
+      // gradient
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+      &-label {
+        // Error using xs: @parcel/transformer-sass: $map: null is not a map.
+        // possible the updated Mono version
+        // @include typography("label xs");
+        // @include typography("custom xs");
+        color: $color-neutrals-700;
+        font-family: "Plus Jakarta Sans";
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 4px 10px;
+        width: auto;
+        height: 100%;
+
+        // separate class color themes
+        &.label-adventure {
+          color: $color-secondary-700;
+          background: $color-secondary-100;
+        }
+
+        &.label-luxury {
+          color: $color-primary-700;
+          background: $color-primary-100;
+        }
+
+        &.label-romantic {
+          color: $color-neutrals-700;
+          background: $color-neutrals-100;
+        }
+      }
+
+      // 'heading' title
+      &-title {
+        @include typography("heading sm");
+        color: $color-base-white;
+      }
+
+      &-location {
+        @include typography("label sm");
+        color: $color-base-white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1em;
+        padding: 4px;
+        padding-left: 0;
+        width: 81px;
+        height: 23px;
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+}
