@@ -11,83 +11,150 @@
   </head>
   <body>
     <main class="main">
-      <div class="component info-box">
-        <div class="info-box__inner">
-          <div class="info-box__content">
-            <p class="info-box__content-intro">
-            Welcome! <br/>
-            It's great to see you, future front-end developer at Primate.<br/>
-            </p>
-            <p class="info-box__content-paragraph">
-            We've created this exercise to put your front-end skills to the test, but to also give you a taster of what kind of stuff you will be working on in your first weeks at the company.
-            </p>
-            <p class="info-box__content-paragraph">
-            There are two main things we'd like you to do:
-            </p>
-            <ol class='main-content-ol'>
-              <li>Style the cards component below so it is responsive and matches the design</li>
-              <li>Based on the strucuture and naming convention of 'Cards' component create and style another one for the simple 'Call to Action'.</li>
-            </ol>
-            <p class="info-box__content-paragraph">
-            You can find the design mock-up file <a class='main-content-link' href='https://www.figma.com/proto/rjsMYOxEfewywzocLenXfl/Primate-Dev-Test?node-id=112%3A1393'>here</a>, and the main design reference file <a class='main-content-link' href='https://www.figma.com/file/rjsMYOxEfewywzocLenXfl/Primate-Dev-Test?type=design&t=Jv2H6jHdXGme4E1V-6'>here</a>.
-            </p>
-            <p class="info-box__content-paragraph">
-              Keep in mind that we only want the <strong class='main-content-strong'>two components</strong> mentioned above, and not the whole page.
-            </p>
-            <p class="info-box__content-paragraph">
-              Here's a screengrab of the scope of this exercise:
-            </p>
-            <img class='main-content-image' src='assets/images/screenshot.png' alt='' />
-            <p class="info-box__content-paragraph">
-              We quite like the HTML structure for the cards below so don't alter it too much unless you have to, but do what you think is the best for the CTA.
-              <br/>
-              <strong class='main-content-strong'>Good luck and have fun!</strong>
-            </p>
+
+      <!-- Hero Component -->
+      <div class="hero">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__content-title">This is title!</h1>
+            <div class="hero__content-body">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              <a class="button" href="#">
+                <span class="button__text">View open jobs</span>
+                <!-- icon -->
+              </a>
+            </div>
+            <div class="hero__media">
+              <img class="hero__media-image" src="https://source.unsplash.com/random/?tires" alt="" />
+              <img class="hero__media-image" src="https://source.unsplash.com/random/?office" alt="" />
+              <img class="hero__media-image" src="https://source.unsplash.com/random/?people" alt="" />
+              <img class="hero__media-image" src="https://source.unsplash.com/random/?tire" alt="" />
+              <img class="hero__media-image" src="https://source.unsplash.com/random/?mechanic" alt="" />
+            </div>
           </div>
         </div>
       </div>
+      <!-- End Hero Component -->
 
-      <div class="component listing">
-        <div class="listing__inner">
+      <!-- Intro Component -->
+      <div class="intro">
+        <div class="intro__inner">
+          <h2 class="intro__header">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+          </h2>
+          <div class="intro__body">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+            <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Intro Component -->
 
-          <a href="#" class="listing__item card">
-            <div class="card__media">
-              <img class="card__media-image" src="https://source.unsplash.com/random/600x1200/?norway" alt="Placeholder image" />
+      <!-- Stats Component -->
+      <div class="stats">
+        <div class="stats__inner">
+          <div class="stats__list">
+            <div class="stats__list-item">
+
             </div>
-
-            <div class="card__body">
-              <div class="card__body-label">Adventure</div>
-              <div class="card__body-title">Breathtaking views  with our adventure tours</div>
-              <div class="card__body-location">Norway</div>
+            <div class="stats__list-item">
+              <div class="stats__list-item__value"></div>
+              <div class="stats__list-item__label"></div>
             </div>
-          </a>
-
-          <a href="#" class="listing__item card">
-            <div class="card__media">
-              <img class="card__media-image" src="https://source.unsplash.com/random/900x600/?italy" alt="Placeholder image" />
+            <div class="stats__list-item">
+              <div class="stats__list-item__value"></div>
+              <div class="stats__list-item__label"></div>
             </div>
+          </div>
 
-            <div class="card__body">
-              <div class="card__body-label">Luxury</div>
-              <div class="card__body-title">Luxury Retreats in Europes  most beautiful cities</div>
-              <div class="card__body-location">Italy</div>
-            </div>
-          </a>
+          <div class="stats__media"><img class="stats__media-image" src="https://source.unsplash.com/random/?people" alt=""></div>
+        </div>
+      </div>
+      <!-- End Stats Component -->
 
-          <a href="#" class="listing__item card">
-            <div class="card__media">
-              <img class="card__media-image" src="https://source.unsplash.com/random/600x600/?greece" alt="Placeholder image" />
-            </div>
+      <!-- Media Component -->
+      <div class="media">
+        <div class="media__inner"><img class="media__image" src="https://source.unsplash.com/random/?people" alt=""></div>
+      </div>
+      <!-- End Media Component -->
 
-            <div class="card__body">
-              <div class="card__body-label">Romantic</div>
-              <div class="card__body-title">Romantic Escapes that you will never forget</div>
-              <div class="card__body-location">Greece</div>
+      <!-- Values Component -->
+      <div class="values values__inner">
+        <div class="values__title">Culture</div>
+
+        <div class="values__list">
+          <div class="values__list-item">
+            <div class="values__list-item__icon"></div>
+            <div class="values__list-item__content">
+              <div class="values__list-item__content-title">Open and inclusive</div>
+              <div class="values__list-item__content-body">At Blackcircles.com, we strive to create a professional yet welcoming work environment - where every member of the team feels supported.</div>
             </div>
-          </a>
+          </div>
 
         </div>
       </div>
+      <!-- End Values Component -->
+
+      <!-- Slider Component -->
+      <div class="slider">
+        <div class="slider__inner">
+          <div class="slider__list">
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Slider Component -->
+
+      <!-- Content Component -->
+      <div class="content">
+        <div class="content__inner">
+          <h2>Why work for us</h2>
+          <p>Blackcircles.com is dedicated to delivering exceptional customer service and driving innovation in the tyre industry. As an employer, we believe in empowering our staff and providing a positive workplace. By joining our dynamic team, you'll have the chance to make a difference and work with passionate professionals who share your commitment to excellence and innovation.</p>
+          <p>At Blackcircles.com, we value our employees and understand their importance to our success. We offer competitive salaries and benefits, as well as opportunities for training and career development. We believe that a happy and motivated workforce is essential to delivering exceptional customer service, and we are committed to fostering a workplace that supports our employees' well-being and professional growth.</p>
+        </div>
+      </div>
+      <!-- End Content Component -->
+
+      <!-- Benefits Component -->
+      <div class="benefits">
+        <div class="benefits__inner">
+          <div class="benefits__title">Benefits</div>
+
+          <div class="benefits__list">
+            <div class="benefits__list-item">Competetive pay</div>
+          </div>
+        </div>
+      </div>
+      <!-- End Benefits Component -->
+
+      <!-- Testimonial Component -->
+      <div class="testimonial">
+        <div class="testimonial__inner">
+          <div class="testimonial__pagination"></div>
+
+          <div class="testimonial__list">
+            <div class="testimonial__list-item">
+              <div class="testimonial__list-item__media">
+                <img class="testimonial__list-item__media-image" src="https://source.unsplash.com/random/?people" alt="">
+              </div>
+              <div class="testimonial__list-item__content">
+                <div class="testimonial__list-item__content-body">The business has also supported me in attaining further qualifications to help in my role and to continue developing my finance knowledge. During my time I have seen huge growth in Blackcircles, it’s a very exciting business to be part of with lots of opportunities and exciting projects and a great team of colleagues from all departments!</div>
+                <div class="testimonial__list-item__content-author">
+                  <div class="testimonial__list-item__content-author-name">Laura MacFarlane</div>
+                  <div class="testimonial__list-item__content-author-title">Management Accountant</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__controls"></div>
+        </div>
+      </div>
+      <!-- End Testimonial Component -->
 
     </main>
   </body>
