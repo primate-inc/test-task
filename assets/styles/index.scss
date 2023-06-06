@@ -4,11 +4,6 @@
 
 @import "global";
 
-// @import "components/info-box.scss";
+@import "components/hero.scss";
 
-.hero {
-  &__title {
-    @include typography('heading xl');
-  }
-}
 
