@@ -135,6 +135,10 @@ display: none;
     font-weight: bold;
     font-family: 'M PLUS 1p', sans-serif; 
 }
+
+.button:hover{
+    background-color: #000;
+}
 /* End Hero Component */
 
 
@@ -216,6 +220,10 @@ display: none;
     color: #fff;
     padding: 10px;
     border-radius: 4px;
+}
+
+.image-text:hover{
+    background-color: #000;
 }
 /* End job Component */
 
