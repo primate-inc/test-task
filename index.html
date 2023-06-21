@@ -7,51 +7,118 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/index.scss" />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    
   </head>
   <body>
     <main class="main">
+      
+      <!--Navbar Component -->
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+          </div>
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--End Navbar Component-->
+
 
       <!-- Hero Component -->
-      <div class="hero">
-        <div class="hero__background"></div>
+      <section class="hero">
+        <div class="hero__background">
+          <img class="hero__background-img" src="https://source.unsplash.com/random/?japan" alt="japan">
+        </div>
         <!-- <div class="hero__inner"> -->
-          <div class="hero__content">
-            <h1 class="hero__content-title">This is title!</h1>
-            <div class="hero__content-body">
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-              <a class="button" href="#">
-                <span class="button__text">View open jobs</span>
-                <!-- icon -->
-              </a>
-            </div>
+        <div class="hero__content">
+          <h1 class="hero__title">Do you want to work<br>in Japan?</h1>
+          <div class="hero__body">
+            <a class="button" href="https://www.primate.co.uk/blog">
+              <span class="button__text">View open jobs</span>
+              <!-- icon -->
+            </a>
           </div>
-          <div class="hero__media">
-            <img class="hero__media-image" src="https://source.unsplash.com/random/?tires" alt="" />
-            <img class="hero__media-image" src="https://source.unsplash.com/random/?office" alt="" />
-            <img class="hero__media-image" src="https://source.unsplash.com/random/?people" alt="" />
-            <img class="hero__media-image" src="https://source.unsplash.com/random/?tire" alt="" />
-            <img class="hero__media-image" src="https://source.unsplash.com/random/?mechanic" alt="" />
-          </div>
-        <!-- </div> -->
+      <section>
+        <!-- </div> 
+        <div class="hero__media">
+          <img class="hero__media-image" src="https://source.unsplash.com/random/?tires" alt="" />
+          <img class="hero__media-image" src="https://source.unsplash.com/random/?office" alt="" />
+          <img class="hero__media-image" src="https://source.unsplash.com/random/?people" alt="" />
+          <img class="hero__media-image" src="https://source.unsplash.com/random/?tire" alt="" />
+          <img class="hero__media-image" src="https://source.unsplash.com/random/?mechanic" alt="" />
+        </div>
+        </div> -->
       </div>
       <!-- End Hero Component -->
+
 
       <!-- Intro Component -->
       <div class="intro">
         <div class="intro__inner">
-          <h2 class="intro__header">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
-          </h2>
+          
+          <h2 class="intro__title">We are NinjaPen Creative</h2>
+          
           <div class="intro__body">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-            <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Creativity is at the heart of everything we do, in technology and design.<br> We put happiness before profit and are selective in working with the right clients on the right projects.<br> Our policy of no set working hours delivers trust, autonomy,and flexibility for our staff.</p>
           </div>
         </div>
       </div>
       <!-- End Intro Component -->
 
-      <!-- Stats Component -->
+
+      <!-- Job Component -->
+      <section class="job">
+        <div class="job__inner">
+          <h2 class="job__title">We are looking for new Ninjas:</h2>
+          <div class="job__media">
+            <div class="image-container">
+              <img class="job__media-image" src="https://source.unsplash.com/random/?laptop" alt="web-developer" />
+              <a href="https://www.primate.co.uk/blog/we-re-hiring-a-frontend-developer" target="_blank">
+                <div class="image-text">Web Developer</div>
+              </a>
+            </div>
+
+            <div class="image-container">
+              <img class="job__media-image" src="https://source.unsplash.com/random/?mobile-phone" alt="app-developer" />
+              <a href="https://www.primate.co.uk/blog/we-re-hiring-a-frontend-developer" target="_blank">
+                <div class="image-text">App Developer</div>
+              </a>
+            </div>
+
+            <div class="image-container">
+              <img class="job__media-image" src="https://source.unsplash.com/random/?meeting" alt="operations-director" />
+              <a href="https://www.primate.co.uk/blog/we-re-hiring-a-frontend-developer" target="_blank">
+                <div class="image-text">Operation Director</div>
+              </a>
+            </div>
+
+            <div class="image-container">
+              <img class="job__media-image" src="https://source.unsplash.com/random/?manager" alt="project-manager" />
+              <a href="https://www.primate.co.uk/blog/we-re-hiring-a-frontend-developer" target="_blank">
+                <div class="image-text">Project Manager</div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <img class="job__media-image" src="https://source.unsplash.com/random/?designer" alt="ux-designer" />
+            <a href="https://www.primate.co.uk/blog/we-re-hiring-a-frontend-developer" target="_blank">
+              <div class="image-text">UX Designer</div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Job Component -->
+
+
+      <!-- Stats Component 
       <div class="stats">
         <div class="stats__inner">
           <div class="stats__list">
@@ -71,17 +138,38 @@
           <div class="stats__media"><img class="stats__media-image" src="https://source.unsplash.com/random/?people" alt=""></div>
         </div>
       </div>
-      <!-- End Stats Component -->
+       End Stats Component -->
 
-      <!-- Media Component -->
+      <!-- Media Component 
       <div class="media">
         <div class="media__inner"><img class="media__image" src="https://source.unsplash.com/random/?people" alt=""></div>
       </div>
-      <!-- End Media Component -->
+       End Media Component -->
+
 
       <!-- Values Component -->
+      <section class="values">
+        <div class="values__inner">
+          <h2 class="values__title">Our Culture and Values</h2>
+          <p class="values__text">At the heart of everything we do here at NinjaPen is our T.R.U.E values. They are what has helped us remain true to ourselves, grow in a sustainable manner and unite our team with a single purpose.<br><br>
+            <strong>Teamwork</strong><br>
+            Empowering communication, skill and dedication within our integrated, dynamic teams.<br><br>
+            <strong>Responsibility</strong><br>
+            Supporting environmental causes, applying ethical practices, promoting fitness, health and personal development.<br><br>
+            <strong>Unity</strong><br>
+            Embracing diversity and equality within the workplace whilst strengthening community links.<br><br>
+            <strong>Experience</strong><br>
+            Focused on strong, transparent relationships and positive end-to-end experiences for all.</p>
+          </p>
+        </div>
+      </section>
+      <!-- End Values Component -->
+        
+
+      <!-- Values Component 
+        
       <div class="values values__inner">
-        <div class="values__title">Culture</div>
+        <h2 class="values__title">Culture</h2>
 
         <div class="values__list">
           <div class="values__list-item">
@@ -94,69 +182,135 @@
 
         </div>
       </div>
-      <!-- End Values Component -->
+      
+       End Values Component -->
+
+
 
       <!-- Slider Component -->
-      <div class="slider">
+      <section class="slider">
         <div class="slider__inner">
-          <div class="slider__list">
-            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
-            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
-            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
-            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
-            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+          <div class="slides">
+            <div class="slide" id="slide1">
+              <img src="https://source.unsplash.com/random/?office" alt="">
+            </div>
+            <div class="slide" id="slide2">
+              <img src="https://source.unsplash.com/random/?car" alt="">
+            </div>
+            <div class="slide" id="slide3">
+              <img src="https://source.unsplash.com/random/?family" alt="">
+            </div>
+          </div>
+          <div class="slider-controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
           </div>
         </div>
-      </div>
+      </section>
       <!-- End Slider Component -->
 
-      <!-- Content Component -->
-      <div class="content">
-        <div class="content__inner">
-          <h2>Why work for us</h2>
-          <p>Blackcircles.com is dedicated to delivering exceptional customer service and driving innovation in the tyre industry. As an employer, we believe in empowering our staff and providing a positive workplace. By joining our dynamic team, you'll have the chance to make a difference and work with passionate professionals who share your commitment to excellence and innovation.</p>
-          <p>At Blackcircles.com, we value our employees and understand their importance to our success. We offer competitive salaries and benefits, as well as opportunities for training and career development. We believe that a happy and motivated workforce is essential to delivering exceptional customer service, and we are committed to fostering a workplace that supports our employees' well-being and professional growth.</p>
-        </div>
-      </div>
-      <!-- End Content Component -->
-
-      <!-- Benefits Component -->
-      <div class="benefits">
-        <div class="benefits__inner">
-          <div class="benefits__title">Benefits</div>
-
-          <div class="benefits__list">
-            <div class="benefits__list-item">Competetive pay</div>
+      <!-- Slider Component 
+      <div class="slider">
+        <div class="slider__inner">
+          <div class="slider__images">
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
+            <div class="slider__list-item"><img class="slider__list-item__image" src="https://source.unsplash.com/random/?office" alt=""></div>
           </div>
         </div>
       </div>
+       End Slider Component -->
+
+
+      <!-- Work Component -->
+      <section class="work">
+        <div class="work__inner">
+          <h2 class="work__title">Why work for us</h2>
+          <p class="work__text">At NinjaPen is dedicated to delivering exceptional customer service and driving innovation in the tyre industry. As an employer, we believe in empowering our staff and providing a positive workplace. By joining our dynamic team, you'll have the chance to make a difference and work with passionate professionals who share your commitment to excellence and innovation.</p>
+        </div>
+      </section>
+      <!-- End Work Component -->
+
+
+      <!-- Benefits Component -->
+      <section class="benefits">
+        <div class="benefits__inner">
+          <h2 class="benefits__title">Benefits</h2>
+          <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="benefits__list">
+            <div class="benefits__list-item">- Competitive Salary</div>
+            <div class="benefits__list-item">- Perfect Location</div>
+            <div class="benefits__list-item">- Training</div>
+            <div class="benefits__list-item">- Free Food at Office</div>
+            <div class="benefits__list-item">- Know a new Culture</div>
+            <div class="benefits__list-item">- Learn Japanese</div>
+          </div>               
+        </div>
+      </section>
       <!-- End Benefits Component -->
 
-      <!-- Testimonial Component -->
-      <div class="testimonial">
-        <div class="testimonial__inner">
-          <div class="testimonial__pagination"></div>
 
-          <div class="testimonial__list">
-            <div class="testimonial__list-item">
-              <div class="testimonial__list-item__media">
-                <img class="testimonial__list-item__media-image" src="https://source.unsplash.com/random/?people" alt="">
+      <!-- Testimonial Component -->
+      <section class="testimonial">
+        <div class="testimonial__inner">
+          <h2 class="testimonial__title">Testimonials</h2>
+          </div>
+          <div class="testimonial__row">
+            <div class="testimonial__column">
+              <img class="testimonial__image" src="https://source.unsplash.com/random/?woman" alt="profile"/>
+              <div class="testimonial__text">
+                <h3>Eleanor Crisp</h3>
+                <h4>UX Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
-              <div class="testimonial__list-item__content">
-                <div class="testimonial__list-item__content-body">The business has also supported me in attaining further qualifications to help in my role and to continue developing my finance knowledge. During my time I have seen huge growth in Blackcircles, it’s a very exciting business to be part of with lots of opportunities and exciting projects and a great team of colleagues from all departments!</div>
-                <div class="testimonial__list-item__content-author">
-                  <div class="testimonial__list-item__content-author-name">Laura MacFarlane</div>
-                  <div class="testimonial__list-item__content-author-title">Management Accountant</div>
-                </div>
+            </div>
+
+            <div class="testimonial__column">
+              <img class="testimonial__image" src="https://source.unsplash.com/random/?men" alt="profile"/>
+              <div class="testimonial__text">
+                <h3>Gordon Norman</h3>
+                <h4>Accountant</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+
+            <div class="testimonial__column">
+              <img class="testimonial__image" src="https://source.unsplash.com/random/?woman-glasses" alt="profile"/>
+              <div class="testimonial__text">
+                <h3>Sue Shei</h3>
+                <h4>Public Relations</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
-
-          <div class="testimonial__controls"></div>
         </div>
-      </div>
+      </section>
       <!-- End Testimonial Component -->
 
-    </main>
+
+      <!-- Footer Component --> 
+    <footer>
+    <div class="footer__inner">
+        <img class="footer__image" src="assets/images/logo.png">
+        <div class="footer__row">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+          
+          <p class="footer__text">
+            NinjaPen Copyright © 2023 NinjaPen - All rights reserved || Designed By: BibianaSansao 
+          </p>
+         </div> 
+      </footer>
+    </footer>
+     <!-- End footer Component -->
   </body>
 </html>
